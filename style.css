@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(44, 44, 52);
+}
+
+.img {
+    width: 65%;
+}
+
+.right {
+    width: 50%;
+    margin-right: -150px;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    color: rgb(243, 237, 237);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 80px 0 60px;
+}
+
+.resume-github {
+    margin: 0 60px;
+    position: relative;
+    top: -60px;
+}
+
+.resume {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.github {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 3px;
+    font-weight: bold;
+}
+
+span {
+    color: black;
+}
+
+.contact {
+    text-align: center;
+    margin: 0 50px;
+    color: red
+}
+
+.text {
+    color: black;
+    text-decoration: none;
+}
+
+.about {
+    width: 35%;
+    background-color: rgb(222, 213, 213);
+    font-size: 1.1rem;
+    border-radius: 7px;
+    padding: 10px 9px 3px 10px;
+    margin: 100px 50px;
+}
+
+.about p {
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    width: 100vw;
+    padding: 15px 0 0 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.links div {
+    margin: 0 10px;
+}
