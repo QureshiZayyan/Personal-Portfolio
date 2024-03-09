@@ -10,6 +10,10 @@ body {
     background-color: rgb(44, 44, 52);
 }
 
+main {
+    overflow: hidden;
+}
+
 .img {
     width: 65%;
 }
@@ -61,12 +65,16 @@ span {
 .contact {
     text-align: center;
     margin: 0 50px;
-    color: red
 }
 
 .text {
     color: black;
     text-decoration: none;
+}
+
+.link-color {
+    text-decoration: none;
+    color: white;
 }
 
 .about {
@@ -89,7 +97,6 @@ footer {
     flex-direction: column;
     background-color: rgb(38, 37, 37);
     color: white;
-    width: 100vw;
     padding: 15px 0 0 0;
 }
 
