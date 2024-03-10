@@ -79,13 +79,13 @@ span {
 
 .about p {
     margin: 17px 0;
-    /* padding: 35px 0; */
     font-size: 1.2rem;
 }
 
-.aboutMe h3{
+.aboutMe h3 {
     font-size: 1.5rem;
 }
+
 .aboutMe {
     width: 35vw;
 }
@@ -106,6 +106,8 @@ span {
     margin: 0 10px;
 }
 
+
+
 footer {
     display: flex;
     align-items: center;
@@ -114,4 +116,21 @@ footer {
     background-color: rgb(38, 37, 37);
     color: white;
     padding: 15px 0 0 0;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact p{
+    margin-bottom: 13px;
+
 }
