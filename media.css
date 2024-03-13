@@ -1,24 +1,35 @@
-/* @media(max-width:600px) {
+@media(max-width:600px) {
     .intro {
         flex-direction: column;
         justify-content: center;
     }
 
     .left {
-        background-color: red;
         width: 100%;
-        width: auto;
+        /* background-color: red; */
+        height: 10vh;
     }
 
-    .right {
+    /* .right{} */
+
+.right {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 80px auto;
+    }
+
+    .resume-github {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
+        position: relative;
+        top: -30px;
     }
 
     .intro .right img {
-        width: 50vw;
-    }
-} */
+        /* width: 50vw; */
+    }  
+}
