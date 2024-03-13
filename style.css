@@ -106,7 +106,10 @@ span {
     margin: 0 10px;
 }
 
-
+.profile-links img {
+    width: 42px;
+    cursor: pointer;
+}
 
 footer {
     display: flex;
@@ -130,7 +133,11 @@ footer {
     flex-direction: column;
 }
 
-.contact p{
+.contact p {
     margin-bottom: 13px;
+}
+
+.linked:hover {
+    background-color: skyblue;
 
 }
