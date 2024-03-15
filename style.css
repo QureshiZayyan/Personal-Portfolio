@@ -5,10 +5,16 @@
     padding: 0;
 }
 
+:root {
+    --bcgcolor: rgb(25, 25, 26);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(44, 44, 52);
+    background-color: rgb(23, 23, 40);
 }
+
+/* background-color: rgb(33, 33, 44); */
 
 main {
     overflow: hidden;
@@ -20,11 +26,12 @@ main {
 
 .right {
     width: 50%;
-    margin-right: -150px;
+    margin-right: -180px;
 }
 
 .left {
-    width: 50%;
+    width: 46.5%;
+    height: 20vh;
 }
 
 .left h1 {
@@ -41,7 +48,7 @@ main {
 .resume-github {
     margin: 0 60px;
     position: relative;
-    top: -60px;
+    top: -35px;
 }
 
 .resume {
@@ -68,11 +75,11 @@ span {
 }
 
 .about {
-    background-color: rgb(38, 38, 42);
     font-size: 1.1rem;
     padding: 32px 9px 23px 80px;
-    margin: 100px 0;
+    margin: 120px 0;
     color: white;
+    background-color: var(--bcgcolor);
 }
 
 .about p {
@@ -110,11 +117,11 @@ span {
 }
 
 footer {
+    background-color: var(--bcgcolor);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(38, 37, 37);
     color: white;
     padding: 15px 0 0 0;
 }
