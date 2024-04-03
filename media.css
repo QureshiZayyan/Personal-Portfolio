@@ -1,35 +1,34 @@
-@media(max-width:600px) {
-    .intro {
-        flex-direction:column;
-        justify-content: center;
-    }
-
-    .left {
-        width: 100%;
-        height: 10vh;
-    }
-
+@media (max-width:600px) {
     .right {
-        /* width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 80px auto; */
         display: none;
     }
 
-    .resume-github {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        position: relative;
-        top: 70px;
-        left: -90px;
-        right: 0;
+    .left {
+        background-color: red;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 
-    .github {
-        margin: 0 8px;
+    .about {
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .about hr {
+        width: 90%;
+    }
+
+    .aboutMe {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #query {
+        margin: 20px auto;
     }
 }
