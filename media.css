@@ -4,7 +4,6 @@
     }
 
     .left {
-        background-color: red;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -30,5 +29,19 @@
 
     #query {
         margin: 20px auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .project .card {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .resume-github{
+        position: static;
+        margin-top: 20px;
     }
 }
