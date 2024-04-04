@@ -10,3 +10,6 @@ document.getElementById('twitter').addEventListener('click', () => window.locati
 document.getElementById('instagram').addEventListener('click', () => window.location.href = 'https://www.instagram.com/qureshi_zayyan/, _blank');
 
 document.getElementById('todo').addEventListener('click', () => window.open("https://qureshizayyan.github.io/ToDo-List/", '_blank'));
+// document.getElementById('news').addEventListener('click', () => window.open("", '_blank'));
+document.getElementById('fb').addEventListener('click', () => window.open("https://github.com/QureshiZayyan/Facebook-login-Page", '_blank'));
+document.getElementById('msclone').addEventListener('click', () => window.open("https://qureshizayyan.github.io/Microsoft-Website-Clone-Responsive-/", '_blank'));
