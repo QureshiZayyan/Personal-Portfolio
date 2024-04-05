@@ -39,12 +39,11 @@
     }
 
     .project .card {
-        width: 70%;
+        width: 90%;
         margin-bottom: 25px;
     }
 
     .resume-github {
-        position: static;
-        margin: 200px 79px 0 79px;
+        top: -200px;
     }
 }
