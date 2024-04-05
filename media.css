@@ -16,7 +16,7 @@
         justify-content: center;
         flex-direction: column;
         padding: 10px 20px 10px 10px;
-        margin: 210px 0;
+        margin: 150px 0 110px 0;
 
     }
 
@@ -45,7 +45,7 @@
     }
 
     .resume-github {
-       position: static;
-       margin: 110px;
+        position: static;
+        margin: 110px 60px;
     }
 }
