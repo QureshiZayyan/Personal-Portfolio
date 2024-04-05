@@ -15,8 +15,9 @@
     .about {
         justify-content: center;
         flex-direction: column;
-        margin-left: auto;
         padding: 10px 20px 10px 10px;
+        margin: 170px 0;
+
     }
 
     .about hr {
@@ -44,6 +45,7 @@
     }
 
     .resume-github {
-        top: 120px;
+        top: 140px;
+        
     }
 }
