@@ -169,11 +169,10 @@ hr {
 }
 
 .project .card {
-    width: 16vw;
+    width: 18vw;
     cursor: pointer;
     margin: 0 14px;
     height: 30vh;
-
 }
 
 .project .card img {

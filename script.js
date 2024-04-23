@@ -4,12 +4,16 @@ var typed = new Typed('#element', {
     // loop: true,
 });
 
-document.getElementById('linkedin').addEventListener('click', () => window.location.href = 'https://www.linkedin.com/in/zayyanqureshi/, _blank');
-document.getElementById('github').addEventListener('click', () => window.location.href = 'https://github.com/QureshiZayyan, blank');
-document.getElementById('twitter').addEventListener('click', () => window.location.href = 'https://twitter.com/qureshizayyan1, _blank');
-document.getElementById('instagram').addEventListener('click', () => window.location.href = 'https://www.instagram.com/qureshi_zayyan/, _blank');
 
-document.getElementById('todo').addEventListener('click', () => window.open("https://qureshizayyan.github.io/ToDo-List/", '_blank'));
-// document.getElementById('news').addEventListener('click', () => window.open("", '_blank'));
-document.getElementById('fb').addEventListener('click', () => window.open("https://github.com/QureshiZayyan/Facebook-login-Page", '_blank'));
-document.getElementById('msclone').addEventListener('click', () => window.open("https://qureshizayyan.github.io/Microsoft-Website-Clone-Responsive-/", '_blank'));
+const Links = (id, url) => {
+    id.addEventListener('click', () => window.open(url, '_blank'));
+}
+
+Links(linkedin, "https://www.linkedin.com/in/zayyanqureshi/");
+Links(github, "https://github.com/QureshiZayyan");
+Links(twitter, "https://twitter.com/qureshizayyan1");
+Links(instagram, "https://www.instagram.com/qureshi_zayyan/");
+Links(todo, "https://qureshizayyan.github.io/ToDo-List/");
+Links(fb, "https://github.com/QureshiZayyan/Facebook-login-Page");
+Links(msclone, "https://qureshizayyan.github.io/Microsoft-Website-Clone-Responsive-/");
+Links(weather, "https://qureshizayyan.github.io/Weather-App/#");
