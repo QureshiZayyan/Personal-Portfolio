@@ -61,7 +61,7 @@ main {
 }
 
 .btn {
-    padding: 3px;
+    padding: 3.2px;
     font-weight: bold;
 }
 
@@ -172,7 +172,6 @@ hr {
     width: 18vw;
     cursor: pointer;
     margin: 0 14px;
-    height: 30vh;
 }
 
 .project .card img {

@@ -4,7 +4,6 @@ var typed = new Typed('#element', {
     // loop: true,
 });
 
-
 const Links = (id, url) => {
     id.addEventListener('click', () => window.open(url, '_blank'));
 }

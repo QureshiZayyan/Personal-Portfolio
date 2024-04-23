@@ -41,11 +41,20 @@
 
     .project .card {
         width: 90%;
-        margin-bottom: 94px;
+        margin-bottom: 90px;
+    }
+
+    .project .project-content {
+        height: 15vh;
     }
 
     .resume-github {
         position: static;
         margin: 160px 60px;
+        text-align: center;
+    }
+
+    .resume-github .btn {
+        padding: 4px;
     }
 }
