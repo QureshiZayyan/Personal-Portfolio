@@ -40,8 +40,8 @@
     }
 
     .project .card {
-        width: 93%;
-        margin-bottom: 90px;
+        width: 95%;
+        margin-bottom: 40px;
     }
 
     .project .project-content {
@@ -55,6 +55,7 @@
     }
 
     .resume-github .btn {
-        padding: 4px;
+        padding: 7px;
+        width: 60%;
     }
 }
