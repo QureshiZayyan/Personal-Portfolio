@@ -45,7 +45,7 @@
 
     .project .card {
         width: 95%;
-        margin-bottom: 33px;
+        margin-bottom: 30px;
     }
 
     .project .project-content {
@@ -56,5 +56,9 @@
         position: static;
         margin: 160px 60px;
         text-align: center;
+    }
+
+    .btn {
+        padding: 2px;
     }
 }

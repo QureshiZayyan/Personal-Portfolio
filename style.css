@@ -9,11 +9,12 @@
     --bcgcolor: rgb(36, 36, 62);
     --textcolor: rgb(117, 18, 117);
     --footerBgColor: rgb(25, 25, 25);
+    --boxShadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
     background-color: rgb(23, 23, 40);
+    font-family: "Montserrat", sans-serif;
 }
 
 main {
@@ -64,10 +65,9 @@ main {
     padding: 3.2px;
     font-weight: bold;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-
 }
 
-span {
+.intro span {
     color: var(--textcolor);
 }
 
@@ -84,8 +84,7 @@ span {
     background-color: var(--footerBgColor);
     display: flex;
     align-items: center;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-
+    box-shadow: var(--boxShadow);
 }
 
 .about p {
@@ -176,7 +175,8 @@ hr {
     width: 18vw;
     cursor: pointer;
     margin: 0 14px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--boxShadow);
+    transition: 0.3s ease;
 }
 
 .project .card img {
@@ -214,6 +214,15 @@ footer {
     padding: 15px 0 0 0;
 }
 
+.skills {
+    font-weight: 600;
+}
+
 footer img {
     margin: 0 6px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    opacity: 0.6;
 }
