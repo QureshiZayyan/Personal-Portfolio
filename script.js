@@ -1,6 +1,6 @@
 var typed = new Typed('#element', {
     strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],
-    typeSpeed: 50,
+    typeSpeed: 45,
     // loop: true,
 });
 

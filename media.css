@@ -1,4 +1,12 @@
+@media(max-width:337px) {
+
+    .resume {
+        margin-bottom: 12px;
+    }
+}
+
 @media (max-width:600px) {
+
     .right {
         display: none;
     }
@@ -36,25 +44,26 @@
     }
 
     .cards-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .project-heading {
         margin-bottom: 25px;
     }
 
-    .project .card {
+    .cards-container .card {
         width: 95%;
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     }
 
-    .project .project-content {
+    .cards-container .project-content {
         height: 15vh;
     }
 
     .resume-github {
         position: static;
         margin: 160px 60px;
+        margin: 2vh;
         text-align: center;
     }
 
@@ -62,3 +71,7 @@
         padding: 2px;
     }
 }
+
+/* Small devices (e.g., smartphones): 320px to 767px
+Medium devices (e.g., tablets): 768px to 1023px
+Large devices (e.g., desktops): 1024px and above */
