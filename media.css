@@ -1,9 +1,11 @@
-@media(max-width:337px) {
+/* @media(min-width:768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: red;
 
-    .resume {
-        margin-bottom: 12px;
-    }
-}
+    } */
+
+/* } */
 
 @media (max-width:600px) {
 
@@ -52,18 +54,17 @@
     }
 
     .cards-container .card {
-        width: 95%;
+        width: 90vw;
         margin-bottom: 22px;
     }
 
     .cards-container .project-content {
-        height: 15vh;
+        height: 17vh;
     }
 
     .resume-github {
         position: static;
-        margin: 160px 60px;
-        margin: 2vh;
+        margin: 13vh 7.5vw;
         text-align: center;
     }
 
