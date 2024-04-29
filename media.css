@@ -1,11 +1,23 @@
-/* @media(min-width:768px) {
+@media(min-width:768px) and (max-width:1023px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
-        background-color: red;
+        row-gap: 30px;
+        margin: 40px auto;
+        place-items: center;
+    }
 
-    } */
+    .cards-container .card {
+        width: 60%;
+    }
 
-/* } */
+    .cards-container .card img {
+        height: 13vh;
+    }
+
+    .project-content {
+        height: 15vh;
+    }
+}
 
 @media (max-width:600px) {
 
@@ -54,7 +66,7 @@
     }
 
     .cards-container .card {
-        width: 90vw;
+        width: 90%;
         margin-bottom: 22px;
     }
 
@@ -64,8 +76,8 @@
 
     .resume-github {
         position: static;
-        margin: 13vh 7.5vw;
         text-align: center;
+        margin: 12vh 0;
     }
 
     .btn {
