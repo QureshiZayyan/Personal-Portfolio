@@ -59,6 +59,7 @@
 
     .cards-container {
         grid-template-columns: 1fr;
+        background-color: red;
     }
 
     .project-heading {
@@ -66,8 +67,8 @@
     }
 
     .cards-container .card {
-        width: 90%;
-        margin-bottom: 22px;
+        width: 70vw;
+        margin: 40px auto 21px auto;
     }
 
     .cards-container .project-content {
@@ -81,7 +82,7 @@
     }
 
     .btn {
-        padding: 2px;
+        padding: 5px;
     }
 }
 
