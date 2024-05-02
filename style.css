@@ -6,8 +6,8 @@
 }
 
 :root {
-    --bcgcolor: rgb(36, 36, 62);
-    --textcolor: rgb(117, 18, 117);
+    --bcgcolor: rgb(18, 18, 33);
+    --textcolor: rgb(179, 25, 179);
     --footerBgColor: rgb(25, 25, 25);
     --boxShadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -82,7 +82,7 @@ main {
 .about {
     font-size: 1.1rem;
     padding: 32px 9px 23px 80px;
-    margin: 110px 0;
+    margin: 115px 0;
     color: white;
     background-color: var(--footerBgColor);
     display: flex;
@@ -170,9 +170,9 @@ hr {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    place-content: center;
+    place-items: center;
     margin: 40px 0;
-    padding: 0 11vw;
+    padding: 0 100px;
 }
 
 .cards-container .card {
@@ -180,7 +180,6 @@ hr {
     cursor: pointer;
     box-shadow: var(--boxShadow);
     transition: 0.3s ease;
-    margin: 0 14px;
 }
 
 .cards-container .card img {
