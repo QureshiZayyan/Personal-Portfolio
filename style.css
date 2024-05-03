@@ -32,7 +32,8 @@ main {
 
 .left {
     width: 47%;
-    height: 20vh;
+    height: 17vh;
+
 }
 
 .left h1 {
@@ -82,7 +83,7 @@ main {
 .about {
     font-size: 1.1rem;
     padding: 32px 9px 23px 80px;
-    margin: 115px 0;
+    margin: 116px 0;
     color: white;
     background-color: var(--footerBgColor);
     display: flex;

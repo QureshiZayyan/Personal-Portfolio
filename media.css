@@ -1,4 +1,16 @@
+ /* for laptops */
+
+ @media (min-width:1024px) {}
+
+ /* for tablets */
  @media(min-width:768px) and (max-width:1023px) {
+
+     .intro {
+         /* justify-content: space-between; */
+         /* align-items: center; */
+         background-color: red;
+     }
+
      .cards-container {
          grid-template-columns: repeat(2, 1fr);
          row-gap: 20px;
@@ -23,15 +35,12 @@
      .resume-github {
          position: absolute;
          top: 366px;
-         /* top: 179px; */
-         /* bottom:60px; */
-         /* margin: 7% 60px; */
      }
 
      .about {
          justify-content: center;
          flex-direction: column;
-         padding: 10px 30px 10px 30px;
+         padding: 10px 15px 10px 15px;
          margin: 150px 0 110px 0;
      }
 
@@ -47,21 +56,23 @@
      }
 
      #query {
-         /* background-color: red; */
          margin: 20px auto;
      }
 
      .left {
          width: 50vw;
+         height: auto;
      }
 
      .right {
          width: 50vw;
+         margin-right: -200px;
      }
+
+     .right img {}
  }
 
-
-
+ /* for mobiles */
  @media (max-width:767px) {
 
      .right {
@@ -70,19 +81,18 @@
 
      .intro {
          justify-content: center;
-         margin: 60px 64px 0 64px;
      }
 
      .left {
-         width: 50vw;
+         width: 55vw;
          text-align: center;
      }
 
      .about {
          justify-content: center;
          flex-direction: column;
-         padding: 10px 30px 10px 30px;
-         margin: 150px 0 110px 0;
+         padding: 10px 18px 10px 18px;
+         margin: 160px 0 110px 0;
      }
 
      .about hr {
@@ -110,7 +120,7 @@
      }
 
      .cards-container .card {
-         width: 65vw;
+         width: 70vw;
          margin-bottom: 22px;
      }
 
@@ -121,7 +131,8 @@
      .resume-github {
          position: static;
          text-align: center;
-         margin: 21vh 0 9vh 0;
+         /* margin: 120px 0 50px 0; */
+         margin: 150px 0 0 0;
      }
 
      .btn {
