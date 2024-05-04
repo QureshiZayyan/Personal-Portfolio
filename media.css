@@ -81,17 +81,21 @@
 
      .intro {
          justify-content: center;
+         width: 100%;
+         margin-left: auto;
+         margin-right: auto;
      }
 
      .left {
-         width: 55vw;
+         width: 285px;
          text-align: center;
+         height: 30vh;
      }
 
      .about {
          justify-content: center;
          flex-direction: column;
-         padding: 10px 18px 10px 18px;
+         padding: 13px 19px 13px 15px;
          margin: 160px 0 110px 0;
      }
 
@@ -131,12 +135,11 @@
      .resume-github {
          position: static;
          text-align: center;
-         /* margin: 120px 0 50px 0; */
-         margin: 150px 0 0 0;
+         margin: 188px 0 0 0;
      }
 
      .btn {
-         padding: 5px;
+         padding: 5.3px;
      }
  }
 
