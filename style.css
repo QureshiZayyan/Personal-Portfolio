@@ -31,9 +31,9 @@ main {
 }
 
 .left {
-    width: 47%;
-    height: 17vh;
-
+    width: 48.8%;
+    height: 22vh;
+    /* background-color: red; */
 }
 
 .left h1 {
@@ -73,6 +73,11 @@ main {
 
 .intro span {
     color: var(--textcolor);
+    display: inline-block;
+}
+
+#element {
+    display: inline-block;
 }
 
 .text {

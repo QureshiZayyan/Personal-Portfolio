@@ -5,12 +5,6 @@
  /* for tablets */
  @media(min-width:768px) and (max-width:1023px) {
 
-     .intro {
-         /* justify-content: space-between; */
-         /* align-items: center; */
-         background-color: red;
-     }
-
      .cards-container {
          grid-template-columns: repeat(2, 1fr);
          row-gap: 20px;
@@ -68,8 +62,6 @@
          width: 50vw;
          margin-right: -200px;
      }
-
-     .right img {}
  }
 
  /* for mobiles */
@@ -87,15 +79,14 @@
      }
 
      .left {
-         width: 285px;
+         width: 295px;
          text-align: center;
-         height: 30vh;
      }
 
      .about {
          justify-content: center;
          flex-direction: column;
-         padding: 13px 19px 13px 15px;
+         padding: 13px 19px 13px 5px;
          margin: 160px 0 110px 0;
      }
 
@@ -135,11 +126,11 @@
      .resume-github {
          position: static;
          text-align: center;
-         margin: 188px 0 0 0;
+         margin: 165px 0 0 0;
      }
 
      .btn {
-         padding: 5.3px;
+         padding: 6px;
      }
  }
 
