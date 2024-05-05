@@ -79,15 +79,16 @@
      }
 
      .left {
-         width: 295px;
+         height: 20vh;
+         width: 301px;
          text-align: center;
      }
 
      .about {
          justify-content: center;
          flex-direction: column;
-         padding: 13px 19px 13px 5px;
-         margin: 160px 0 110px 0;
+         padding: 13px 25px 13px 5px;
+         margin: 130px 0 85px 0;
      }
 
      .about hr {
@@ -126,11 +127,15 @@
      .resume-github {
          position: static;
          text-align: center;
-         margin: 165px 0 0 0;
+         margin: 145px 0 0 0;
      }
 
      .btn {
          padding: 6px;
+     }
+
+     .project {
+         margin-bottom: 90px;
      }
  }
 

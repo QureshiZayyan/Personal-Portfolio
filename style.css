@@ -33,7 +33,6 @@ main {
 .left {
     width: 48.8%;
     height: 22vh;
-    /* background-color: red; */
 }
 
 .left h1 {
@@ -50,7 +49,7 @@ main {
 .resume-github {
     margin: 0 60px;
     position: relative;
-    top: -35px;
+    top: -40px;
 }
 
 .resume {
@@ -73,10 +72,6 @@ main {
 
 .intro span {
     color: var(--textcolor);
-    display: inline-block;
-}
-
-#element {
     display: inline-block;
 }
 
