@@ -72,7 +72,6 @@ main {
 
 .intro span {
     color: var(--textcolor);
-    display: inline-block;
 }
 
 .text {
