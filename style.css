@@ -12,6 +12,14 @@
     --boxShadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+header {
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: rgb(23, 23, 40);
     font-family: "Montserrat", sans-serif;
@@ -44,6 +52,7 @@ main {
     align-items: center;
     justify-content: space-between;
     margin: 60px 80px 0 60px;
+    overflow: hidden;
 }
 
 .resume-github {
@@ -58,7 +67,7 @@ main {
 
 .btn {
     padding: 6px;
-    font-weight: bold;
+    font-weight: bolder;
     transition: 0.3s ease;
     cursor: pointer;
     border-radius: 5px;
@@ -88,6 +97,7 @@ main {
     display: flex;
     align-items: center;
     box-shadow: var(--boxShadow);
+    overflow: hidden;
 }
 
 .about p {
@@ -109,23 +119,6 @@ main {
 .link-color {
     text-decoration: none;
     color: white;
-}
-
-.profile-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    width: 100%;
-}
-
-.profile-links img {
-    margin: 0 7px;
-}
-
-.profile-links img {
-    width: 32px;
-    cursor: pointer;
 }
 
 .bold {
@@ -159,19 +152,22 @@ main {
     margin-top: 6px;
 }
 
-hr {
-    color: var(--textcolor);
-}
-
 .project {
     margin: 0 40px 150px 40px;
+}
+
+.project-heading {
+    font-size: 2.1rem;
+    border-bottom: 1.5px solid var(--textcolor);
+    width: 10%;
+    color: white;
 }
 
 .cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
-    margin: 40px 0;
+    margin: 50px 0;
     padding: 0 100px;
 }
 
@@ -180,6 +176,11 @@ hr {
     cursor: pointer;
     box-shadow: var(--boxShadow);
     transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    opacity: 0.6;
 }
 
 .cards-container .card img {
@@ -198,15 +199,16 @@ hr {
     height: 20vh;
 }
 
-.project-heading {
-    font-size: 2.1rem;
-    border-bottom: 1.5px solid var(--textcolor);
-    width: 10%;
-    color: white;
-}
-
 .space {
     margin-bottom: 5px;
+}
+
+.skills {
+    font-weight: 600;
+}
+
+hr {
+    color: var(--textcolor);
 }
 
 footer {
@@ -217,15 +219,23 @@ footer {
     padding: 15px 0 0 0;
 }
 
-.skills {
-    font-weight: 600;
+.profile-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.profile-links img {
+    margin: 0 7px;
+}
+
+.profile-links img {
+    width: 32px;
+    cursor: pointer;
 }
 
 footer img {
     margin: 0 6px;
-}
-
-.card:hover {
-    transform: translateY(-2px);
-    opacity: 0.6;
 }
