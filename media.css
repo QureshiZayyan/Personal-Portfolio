@@ -3,6 +3,7 @@
  /* @media (min-width:1024px) {} */
 
  /* for tablets */
+
  @media(min-width:768px) and (max-width:1023px) {
 
      .cards-container {
@@ -79,7 +80,8 @@
      }
 
      .left {
-         height: 20vh;
+         height: 25vh;
+         height: auto;
          width: 301px;
          text-align: center;
      }
