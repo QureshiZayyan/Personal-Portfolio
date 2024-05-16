@@ -80,7 +80,7 @@
      }
 
      .left {
-         height: 25vh;
+         height: 28vh;
          width: 301px;
          text-align: center;
      }
@@ -119,6 +119,10 @@
      .cards-container .card {
          width: 63vw;
          margin-bottom: 22px;
+     }
+
+     .cards-container .card img {
+         height: 15vh;
      }
 
      .cards-container .project-content {
