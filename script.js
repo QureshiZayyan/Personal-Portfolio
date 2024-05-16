@@ -4,9 +4,7 @@ var typed = new Typed('#element', {
     // loop: true,
 });
 
-const Links = (id, url) => {
-    id.addEventListener('click', () => window.open(url, '_blank'));
-}
+const Links = (id, url) => id.addEventListener('click', () => window.open(url, '_blank'));
 
 Links(linkedin, "https://www.linkedin.com/in/zayyanqureshi/");
 Links(github, "https://github.com/QureshiZayyan");

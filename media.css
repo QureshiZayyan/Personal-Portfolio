@@ -81,7 +81,6 @@
 
      .left {
          height: 25vh;
-         height: auto;
          width: 301px;
          text-align: center;
      }
@@ -118,22 +117,22 @@
      }
 
      .cards-container .card {
-         width: 70vw;
+         width: 63vw;
          margin-bottom: 22px;
      }
 
      .cards-container .project-content {
-         height: 15vh;
+         height: 12vh;
      }
 
      .resume-github {
          position: static;
          text-align: center;
-         margin: 145px 0 0 0;
+         margin: 135px 0 0 0;
      }
 
      .btn {
-         padding: 6.5px;
+         padding: 7px;
      }
 
      .project {
