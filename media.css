@@ -80,7 +80,7 @@
      }
 
      .left {
-         height: 28vh;
+         height: 27vh;
          width: 301px;
          text-align: center;
      }
@@ -117,22 +117,22 @@
      }
 
      .cards-container .card {
-         width: 63vw;
+         width: 65vw;
          margin-bottom: 22px;
      }
 
      .cards-container .card img {
-         height: 15vh;
+         height: 16vh;
      }
 
      .cards-container .project-content {
-         height: 12vh;
+         height: 13vh;
      }
 
      .resume-github {
          position: static;
          text-align: center;
-         margin: 135px 0 0 0;
+         margin: 120px 0 0 0;
      }
 
      .btn {
