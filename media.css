@@ -117,16 +117,16 @@
      }
 
      .cards-container .card {
-         width: 70vw;
+         width: 68vw;
          margin-bottom: 22px;
      }
 
      .cards-container .card img {
-         height: 16vh;
+         height: 17vh;
      }
 
      .cards-container .project-content {
-         height: 14.5vh;
+         height: 13vh;
      }
 
      .resume-github {
