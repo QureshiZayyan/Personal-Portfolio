@@ -228,6 +228,12 @@ footer {
     margin: 0 7px;
 }
 
+.profile-links img :active,
+.profile-links img:active {
+    background: none;
+    outline: none;
+}
+
 .profile-links img {
     width: 32px;
     cursor: pointer;
