@@ -148,6 +148,11 @@ body {
     margin: 0 40px 150px 40px;
 }
 
+.project a {
+    text-decoration: none;
+    color: black;
+}
+
 .project-heading {
     font-size: 2.1rem;
     border-bottom: 1.5px solid var(--textcolor);
