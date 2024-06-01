@@ -220,25 +220,18 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 22px 0;
     width: 100%;
 }
 
 .profile-links img {
-    margin: 0 7px;
+    margin: 0 5px;
+    width: 30px;
+    cursor: pointer;
 }
 
 .profile-links img :active,
 .profile-links img:active {
     background: none;
     outline: none;
-}
-
-.profile-links img {
-    width: 32px;
-    cursor: pointer;
-}
-
-footer img {
-    margin: 0 6px;
 }
