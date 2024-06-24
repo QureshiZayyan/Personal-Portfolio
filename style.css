@@ -118,17 +118,6 @@ body {
     font-size: 1.4rem;
 }
 
-.contact-details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.contact-details p {
-    margin-bottom: 13px;
-}
-
 #query {
     margin-left: 150px;
 }
@@ -214,6 +203,17 @@ footer {
     flex-direction: column;
     color: white;
     padding: 15px 0 0 0;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-details p {
+    margin-bottom: 13px;
 }
 
 .profile-links {
