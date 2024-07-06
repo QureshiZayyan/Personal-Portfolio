@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: rgb(20, 20, 47);
+  /* background-color: rgb(82, 15, 15); */
+}
+
+.project-heading {
+  border-bottom: 1.5px solid rgb(179, 25, 179);;
+}
