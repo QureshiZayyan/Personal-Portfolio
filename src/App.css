@@ -13,5 +13,82 @@ body {
 }
 
 .project-heading {
-  border-bottom: 1.5px solid rgb(179, 25, 179);;
+  border-bottom: 1.5px solid rgb(179, 25, 179);
+  ;
+}
+
+@media (max-width:767px) {
+
+  .right {
+    display: none;
+  }
+
+  .intro {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .about {
+    overflow: hidden;
+    flex-direction: column;
+    padding: 20px 25px 13px 0;
+    margin: 130px 0 85px 0;
+  }
+
+  .about hr {
+    width: 100%;
+  }
+
+  .aboutMe {
+    width: 90vw;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #query {
+    margin: 20px auto;
+    text-align: center;
+  }
+#query span{
+  margin: auto;
+  text-align: center;
+
+}
+  .project-heading {
+    margin-bottom: 25px;
+  }
+
+  .cards-container {
+    place-content: center;
+  }
+
+  .cards-container .card {
+    width: 68vw;
+  }
+
+  .cards-container .card img {
+    height: 17vh;
+  }
+
+  .cards-container .project-content {
+    height: 13vh;
+  }
+
+  .resume-github {
+    position: static;
+    text-align: center;
+    margin: 120px 0 0 0;
+  }
+
+  .btn {
+    padding: 7px;
+  }
+
+  .project {
+    margin-bottom: 90px;
+  }
 }
