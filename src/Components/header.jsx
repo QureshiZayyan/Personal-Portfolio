@@ -20,14 +20,14 @@ export const Header = (props) => {
     return (
         <>
             <header>
-                <div className="intro flex justify-between items-center mt-[60px] mr-[80px] mb-0 ml-[60px] overflow-hidden">
-                    <div className="left w-[48.8%] h-[22vh]">
-                        <h1 className="text-[31.9px] font-bold text-white leading-[39px]">Hey, My Self <span className="name text-purpleclr">Zayyan Qureshi</span> & I'm a Passionate
+                <div className="intro flex justify-between mt-[60px] items-center mr-[80px] mb-0 ml-[60px] overflow-hidden">
+                    <div className="md:left w-[48.8%] h-[110px]">
+                        <h1 className="text-[31.9px] font-bold text-white leading-[39px]">Hey, My Self <span className="name text-purpleclr">Zayyan Qureshi</span> & I&apos;m a Passionate
                             <br />
                             <span id="element" className="text-purpleclr"></span>
                         </h1>
                     </div>
-
+                    
                     <div className="right w-[50%] mr-[-180px]">
                         <img src={props.imageurl} alt="" className="img w-[63%]" />
                     </div>
