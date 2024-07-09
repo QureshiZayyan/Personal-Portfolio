@@ -17,7 +17,7 @@ export const App = () => {
         <About />
         <section className="project mt-0 mx-[40px] mb-[150px]">
           <h2 className="project-heading w-[10%] font-bold text-[2.1rem] text-white border-b-[1.5px]">Projects</h2>
-          <div className="cards-container grid grid-cols-4 place-items-center my-[50px] mx-0 px-[100px] py-0">
+          <div className="cards-container grid lg:grid-cols-4 gap-y-5 md:grid-cols-2 my-[50px] place-items-center mx-36">
             <Cards name="News Search App" imageurl={image2} link='https://qureshizayyan.github.io/News-Web-App/' />
             <Cards name="Live Weather Search App" imageurl={image3} link='https://qureshizayyan.github.io/Weather-App/#' />
             <Cards name="Recipe Finder App" imageurl={image5} link='https://qureshizayyan.github.io/Recipe-Finder-App/' />
