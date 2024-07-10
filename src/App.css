@@ -34,16 +34,18 @@ body {
   .intro {
     justify-content: center;
     width: 100%;
+    margin: 50px auto 0 auto;
   }
 
   .left {
     text-align: center;
+    width: 301px;
   }
 
   .about {
     overflow: hidden;
     flex-direction: column;
-    padding: 20px 25px 13px 0;
+    padding: 20px 15px 13px 0;
     margin: 130px 0 85px 0;
   }
 
@@ -54,18 +56,19 @@ body {
   .aboutMe {
     width: 90vw;
     overflow: hidden;
-    padding: 0;
   }
 
   #query {
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
+    padding: 0;
+    width: 100vw;
   }
 
   #query span {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
-
+    padding: 0;
   }
 
   .project-heading {
@@ -74,18 +77,21 @@ body {
 
   .cards-container {
     place-content: center;
+    margin: 0 auto;
   }
+
 
   .cards-container .card {
     width: 68vw;
+    margin-bottom: 18px;
   }
 
   .cards-container .card img {
-    height: 17vh;
+    height: 14vh;
   }
 
   .cards-container .project-content {
-    height: 13vh;
+    height: 10vh;
   }
 
   .resume-github {
