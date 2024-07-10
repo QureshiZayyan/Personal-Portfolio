@@ -3,20 +3,20 @@ import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 export const Header = (props) => {
-        useEffect(() => {
-            const options = {
-                strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],
-                typeSpeed: 30,
-                backSpeed: 20,
-                backDelay: 1200,
-            };
+    useEffect(() => {
+        const options = {
+            strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],
+            typeSpeed: 30,
+            backSpeed: 20,
+            backDelay: 1200,
+        };
 
-            const typed = new Typed('#element', options);
+        const typed = new Typed('#element', options);
 
-            return () => {
-                typed.destroy();
-            };
-        }, []);
+        return () => {
+            typed.destroy();
+        };
+    }, []);
 
     return (
         <>
