@@ -16,8 +16,13 @@ body {
   ;
 }
 
-.about{
-    background-color: rgb(101, 99, 99);
+.about {
+  background-color: rgba(70, 60, 59, 0.596);
+}
+
+.footer {
+  background-color: rgba(48, 42, 42, 0.596);
+
 }
 
 @media (max-width:767px) {

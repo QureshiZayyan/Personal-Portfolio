@@ -14,7 +14,7 @@ export const About = () => {
                         Bootstrap,Tailwind CSS,
                         Advance Javascript, React.JS</span></p>
                     <hr />
-                    <p className="my-[17px] text-">Graduated with a degree in <strong>(Bachelor of Science in Information Technology)</strong>.</p>
+                    <p className="my-[17px]">Graduated with a degree in <strong>(Bachelor of Science in Information Technology)</strong>.</p>
                 </div>
 
                 <div className="query ml-[150px] mt-[26px] text-center md:mx-auto">

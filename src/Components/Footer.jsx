@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <>
-            <footer className="bg-bcg text-white flex flex-col pt-[11px] text-center w-full">
+            <footer className="footer text-white flex flex-col pt-[11px] text-center w-full">
                 <div className="contact-details">
                     <p className="bold font-bold text-xl mb-[8px]">Stay Connected</p>
                     <p className="number mb-[8px]"><a href="tel:+918793733783">(+91) 8793733783</a></p>
