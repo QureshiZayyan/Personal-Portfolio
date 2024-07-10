@@ -36,7 +36,7 @@ export const Header = (props) => {
                     </div>
                 </div>
 
-                <div className="resume-github mx-[60px] relative md:top-[13%] lg:top-[-13%]">
+                <div className="resume-github mx-[60px] relative lg:-top-11 md:top-[13%]">
                     <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] border-transparent bg-white">Download Resume</button></a>
                     <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button className="text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] border-transparent bg-white ml-[6.8px]">Visit Github</button></a>
                 </div>

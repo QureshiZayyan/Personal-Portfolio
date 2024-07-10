@@ -3,7 +3,7 @@ export const Footer = () => {
         <>
             <footer className="bg-bcg text-white flex flex-col pt-[11px] text-center w-full">
                 <div className="contact-details">
-                    <p className="bold font-bold text-[1.4rem] mb-[8px]">Stay Connected</p>
+                    <p className="bold font-bold text-xl mb-[8px]">Stay Connected</p>
                     <p className="number mb-[8px]"><a href="tel:+918793733783">(+91) 8793733783</a></p>
                     <a href="mailto:qureshizayyan49@gmail.com" className="link-color">qureshizayyan49@gmail.com</a>
                 </div>

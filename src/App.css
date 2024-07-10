@@ -16,6 +16,10 @@ body {
   ;
 }
 
+.about{
+    background-color: rgb(101, 99, 99);
+}
+
 @media (max-width:767px) {
 
   .right {
