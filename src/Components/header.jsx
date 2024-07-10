@@ -21,7 +21,7 @@ export const Header = (props) => {
     return (
         <>
             <header>
-                <div className=" bg-red-500intro flex items-center mt-[50px] mr-[80px] ml-[60px] overflow-hidden">
+                <div className="intro flex items-center mt-[50px] mr-[80px] ml-[60px] overflow-hidden">
                     <div className="left w-[49%] md:w-[50vw]">
                         <h1 className="text-[31.9px] font-bold text-white leading-[39px]">Hey, My Self <span className="name text-purpleclr">Zayyan Qureshi</span>
                             <br />
