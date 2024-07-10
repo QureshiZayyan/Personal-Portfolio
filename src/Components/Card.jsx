@@ -9,7 +9,7 @@ export const Cards = (props) => {
                         <img className="w-full lg:h-[12vh] md:h-[16vh] rounded-t-[8.5px]" src={props.imageurl} alt={props.name} />
                     </div>
                     <div className="project-content mt-[-0.5px] px-[5px] py-[5px] lg:h-[12vh] md:h-[17vh] rounded-b-[8.5px] bg-white">
-                        <h3 className="font-bold text-[1.2rem] leading-6 mb-[5px]">{props.name}</h3>
+                        <h3 className="font-bold text-base leading-6 mb-[5px]">{props.name}</h3>
                         <p className="about-project mt-[1px] mb-[5px]">{props.about}</p>
                     </div>
                 </a>
