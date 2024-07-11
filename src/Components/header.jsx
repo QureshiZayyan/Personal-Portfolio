@@ -7,8 +7,8 @@ export const Header = (props) => {
         const options = {
             strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],
             typeSpeed: 30,
-            backSpeed: 20,
-            backDelay: 1200,
+            backSpeed: 14,
+            backDelay: 2000,
         };
 
         const typed = new Typed('#element', options);
