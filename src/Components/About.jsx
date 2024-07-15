@@ -3,7 +3,7 @@ import emailIcon from '../assets/email.png';
 export const About = () => {
     return (
         <>
-            <section className="about shadow-bs leading-6 text-black flex items-center lg:flex-row md:justify-center md:flex-col text-base pt-[32px] lg:pr-[9px] lg:pb-[23px] lg:pl-[80px] my-[110px] md:pl-[10px] md:pr-[40px] md:pb-[17px]">
+            <section className="about shadow-bs leading-6 text-white flex items-center lg:flex-row md:justify-center md:flex-col text-base pt-[32px] lg:pr-[9px] lg:pb-[23px] lg:pl-[80px] my-[93px] md:pl-[10px] md:pr-[40px] md:pb-[17px]">
                 <div className="aboutMe lg:w-[35vw] md:w-[85vw]">
                     <h3 className="font-bold mb-[10px] text-2xl">About Me</h3>
 

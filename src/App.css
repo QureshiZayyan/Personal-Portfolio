@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --footer-color: rgba(153, 152, 152, 0.596);
+  --footer-color: rgb(45, 44, 44);
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   background-color: var(--footer-color);
 }
 
-@media (max-width:767px) {
+@media (max-width:640px) {
 
   .right {
     display: none;
@@ -82,15 +82,15 @@ body {
   }
 
   .cards-container .card {
-    width: 53vw;
+    width: 185px;
   }
 
   .cards-container .card img {
-    height: 14vh;
+    height: 90px;
   }
 
   .cards-container .project-content {
-    height: 9.5vh;
+    height: 53px;
   }
 
   .resume-github {
