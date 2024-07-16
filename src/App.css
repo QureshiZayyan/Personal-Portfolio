@@ -8,11 +8,19 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --footer-color: rgb(26, 24, 24);
+  /* --footer-color: rgb(39, 38, 38); */
+  --footer-color: rgb(52, 52, 62);
+  --textclr: rgb(234, 62, 234);
 }
 
 body {
-  background-color: rgb(26, 26, 63);
+  /* background-color: rgb(26, 26, 63); */
+  background-color: rgb(24, 24, 44);
+}
+
+.name,
+#element {
+  color: var(--textclr);
 }
 
 .project-heading {
@@ -22,6 +30,10 @@ body {
 .about,
 .footer {
   background-color: var(--footer-color);
+}
+
+button {
+  border: 2px solid var(--textclr);
 }
 
 @media (max-width:768px) {
@@ -38,8 +50,8 @@ body {
   }
 
   .right img {
-    margin: 0;
-    width: 72%;
+    margin: 20px auto;
+    width: 100%;
   }
 
   .left {
