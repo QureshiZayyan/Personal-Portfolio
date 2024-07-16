@@ -24,16 +24,21 @@ body {
   background-color: var(--footer-color);
 }
 
-@media (max-width:640px) {
-
-  .right {
-    display: none;
-  }
+@media (max-width:768px) {
 
   .intro {
     justify-content: center;
     width: 100%;
     margin: 50px auto 0 auto;
+    flex-direction: column;
+  }
+
+  .right {
+    margin: 10px 0;
+  }
+
+  .right img {
+    margin: 0;
   }
 
   .left {
@@ -82,15 +87,15 @@ body {
   }
 
   .cards-container .card {
-    width: 185px;
+    width: 200px;
   }
 
   .cards-container .card img {
-    height: 90px;
+    height: 120px;
   }
 
   .cards-container .project-content {
-    height: 53px;
+    height: 54px;
   }
 
   .resume-github {
@@ -107,3 +112,6 @@ body {
     margin-bottom: 90px;
   }
 }
+
+/* md:w-[300px] md:h-[120px]
+md:mr-[-220px] */
