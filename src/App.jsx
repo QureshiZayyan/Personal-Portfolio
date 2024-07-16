@@ -6,7 +6,7 @@ import { Footer } from './Components/Footer';
 import image1 from './assets/todos.webp';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
-import image4 from './assets/developer.png';
+import image4 from './assets/developer2.png';
 import image5 from './assets/recipee.png';
 
 export const App = () => {
