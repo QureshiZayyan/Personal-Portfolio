@@ -9,13 +9,14 @@ body::-webkit-scrollbar {
 
 :root {
   /* --footer-color: rgb(39, 38, 38); */
-  --footer-color: rgb(52, 52, 62);
+  --footer-color: rgb(49, 49, 56);
   --textclr: rgb(234, 62, 234);
 }
 
 body {
   /* background-color: rgb(26, 26, 63); */
-  background-color: rgb(24, 24, 44);
+  /* background-color: rgb(24, 24, 44); */
+  background-color: rgb(33, 33, 60);
 }
 
 .name,
@@ -28,8 +29,18 @@ body {
 }
 
 .about,
-.footer {
+.footer,
+nav {
   background-color: var(--footer-color);
+}
+
+.about {
+  border-radius: 15px;
+}
+
+footer {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 button {
@@ -47,6 +58,7 @@ button {
 
   .right {
     margin: 10px 0;
+    width: 75%;
   }
 
   .right img {
@@ -64,7 +76,7 @@ button {
     overflow: hidden;
     flex-direction: column;
     padding: 20px 15px 13px 3px;
-    margin: 100px 0 85px 0;
+    margin: 120px 0 85px 0;
   }
 
   .about hr {
@@ -114,17 +126,19 @@ button {
   .resume-github {
     position: static;
     text-align: center;
-    margin: 70px 0 0 0;
+    margin: 50px 0 0 0;
   }
 
   .btn {
     padding: 7px;
   }
 
+  #btn {
+    position: relative;
+    top: 30px;
+  }
+
   .project {
     margin-bottom: 90px;
   }
 }
-
-/* md:w-[300px] md:h-[120px]
-md:mr-[-220px] */
