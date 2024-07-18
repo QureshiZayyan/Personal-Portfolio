@@ -1,6 +1,7 @@
 import Typed from 'typed.js';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import logo from '../assets/logo.png';
 
 export const Header = (props) => {
     useEffect(() => {
@@ -25,10 +26,10 @@ export const Header = (props) => {
     return (
         <>
             <header className="sticky top-0 z-[1]">
-                <nav className="px-[20px] py-[10px] shadow-md ">
+                <nav className="shadow-md px-1">
                     <div className="heading">
                         <a href="#" onClick={() => ReloadPage()}>
-                            <h2 id="reload" className="text-2xl font-extrabold cursor-pointer text-white">MyPortfolio</h2>
+                            <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
                         </a>
                     </div>
                 </nav>
@@ -50,8 +51,8 @@ export const Header = (props) => {
             </div>
 
             <div className="resume-github mx-[65px] relative lg:-top-8 md:top-3 xl:-top-16">
-                <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
-                <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white ml-[8px]">Visit Github</button></a>
+                <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
+                <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white ml-[8px]">Visit Github</button></a>
             </div>
         </>
     )

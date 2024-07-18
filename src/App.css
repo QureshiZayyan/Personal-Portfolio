@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 body {
   /* background-color: rgb(26, 26, 63); */
   /* background-color: rgb(24, 24, 44); */
-  background-color: rgb(33, 33, 60);
+  background-color: rgb(28, 28, 56);
 }
 
 .name,
@@ -113,6 +113,12 @@ button {
 
   .cards-container .card {
     width: 200px;
+  }
+
+  .btn:hover {
+    outline: none;
+    opacity: 1;
+    transform: none;
   }
 
   .cards-container .card img {
