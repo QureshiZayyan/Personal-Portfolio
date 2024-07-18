@@ -10,6 +10,8 @@ import image3 from './assets/weather.png'
 import image5 from './assets/recipee.png';
 
 export const App = () => {
+
+  console.log('app was loaded');
   return (
     <>
       <Header />
