@@ -20,7 +20,8 @@ export const Cards = (props) => {
 
 Cards.propTypes = {
     name: PropTypes.string.isRequired,
-    about: PropTypes.string.isRequired,
+    // about: PropTypes.string.isRequired,
     imageurl: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
 }
+

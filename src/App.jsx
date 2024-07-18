@@ -1,18 +1,18 @@
 import './App.css';
-import { Header } from './Components/Header'
+import { Header } from './Components/Header';
 import { About } from './Components/About';
 import { Cards } from './Components/Card';
 import { Footer } from './Components/Footer';
 import image1 from './assets/todos.webp';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
-import image4 from './assets/developer2.png';
+
 import image5 from './assets/recipee.png';
 
 export const App = () => {
   return (
     <>
-      <Header imageurl={image4} />
+      <Header />
       <main>
         <About />
         <section className="project mt-0 mx-[40px] mb-[150px]">
