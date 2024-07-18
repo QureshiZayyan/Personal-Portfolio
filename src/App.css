@@ -48,7 +48,6 @@ button {
 }
 
 @media (max-width:768px) {
-
   .intro {
     justify-content: center;
     width: 100%;
