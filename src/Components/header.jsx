@@ -25,13 +25,12 @@ export const Header = (props) => {
 
     return (
         <>
-            <header>
-                <nav className="sticky top-0 z-[1] px-1">
+            <header className='sticky top-0 z-[1]'>
+                {/* <nav className="px-1">
                     <a href="#" onClick={() => ReloadPage()}>
                         <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
                     </a>
-                </nav>
-            </header>
+                </nav> */}
 
             <div className="intro flex items-center mt-[50px] mx-16">
                 <div className="left lg:w-[60%] lg:h-auto xl:w-[49%] xl:h-auto md:w-[304px] md:h-[200px]">
@@ -52,6 +51,7 @@ export const Header = (props) => {
                 <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
                 <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white ml-[8px]">Visit Github</button></a>
             </div>
+            </header>
         </>
     )
 }
