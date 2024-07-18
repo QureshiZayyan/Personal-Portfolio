@@ -25,13 +25,11 @@ export const Header = (props) => {
 
     return (
         <>
-            <header className="sticky top-0 z-[1]">
-                <nav className="shadow-md px-1">
-                    <div className="heading">
-                        <a href="#" onClick={() => ReloadPage()}>
-                            <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
-                        </a>
-                    </div>
+            <header>
+                <nav className="sticky top-0 z-[1] px-1">
+                    <a href="#" onClick={() => ReloadPage()}>
+                        <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
+                    </a>
                 </nav>
             </header>
 

@@ -1,7 +1,7 @@
 import './App.css';
-import { Cards } from './Components/Card';
-import { About } from './Components/About';
 import { Header } from './Components/Header'
+import { About } from './Components/About';
+import { Cards } from './Components/Card';
 import { Footer } from './Components/Footer';
 import image1 from './assets/todos.webp';
 import image2 from './assets/news.jpg';

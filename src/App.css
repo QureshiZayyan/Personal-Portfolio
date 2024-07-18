@@ -57,7 +57,7 @@ button {
   }
 
   .right {
-    margin: 10px 0;
+    margin: 20px 0;
     width: 75%;
   }
 
@@ -76,7 +76,7 @@ button {
     overflow: hidden;
     flex-direction: column;
     padding: 20px 15px 13px 3px;
-    margin: 120px 0 85px 0;
+    margin: 135px 0 85px 0;
   }
 
   .about hr {
@@ -141,7 +141,8 @@ button {
 
   #btn {
     position: relative;
-    top: 30px;
+    top: 55px;
+    left: -15px;
   }
 
   .project {
