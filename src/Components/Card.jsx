@@ -9,8 +9,8 @@ export const Cards = (props) => {
                         <img className="w-full xl:h-[12vh] lg:h-[19vh] md:h-[120px] rounded-t-[8.5px]" src={props.imageurl} alt={props.name} />
                     </div>
                     <div className="project-content text-base xl:h-[7vh] lg:h-[12vh] md:h-[70px] mt-[-0.5px] px-[5px] py-[5px] rounded-b-[8.5px] bg-white">
-                        <h3 className="font-bold leading-6 mb-[5px]">{props.name}</h3>
-                        <p className="about-project mt-[1px] mb-[5px]">{props.about}</p>
+                        <h3 className="font-bold leading-6 mb-[2px]">{props.name}</h3>
+                        <p className="about-project mt-[1px] mb-[2px]">{props.about}</p>
                     </div>
                 </a>
             </div>
@@ -20,7 +20,7 @@ export const Cards = (props) => {
 
 Cards.propTypes = {
     name: PropTypes.string.isRequired,
-    // about: PropTypes.string.isRequired,
+    about: PropTypes.string.isRequired,
     imageurl: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
 }
