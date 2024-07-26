@@ -4,9 +4,6 @@ export default {
     "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
-      },
       textColor: {
         // 'purpleclr': 'rgb(179, 46, 179)',
       },

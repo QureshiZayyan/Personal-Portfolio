@@ -26,10 +26,22 @@ export const Header = () => {
   return (
     <>
       <header className='sticky top-0 z-[1]'>
-        <nav className="px-1">
-          <a href="#" onClick={() => ReloadPage()}>
-            <img src={logo} alt="logo" className="w-[80px] h-[50px] object-cover" />
-          </a>
+
+        <nav className="px-3 flex items-center justify-between">
+          <div className="logo">
+            <a href="#" onClick={() => ReloadPage()}>
+              <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
+            </a>
+          </div>
+
+          {/* <div className="links text-white mx-40">
+            <ul className='flex'>
+              <li className='mx-3'><a href="#contact" target='-blank'>Home</a></li>
+              <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
+              <li className='mx-3'><a href="https://medium.com/@qureshizayyan49" target='-blank'>Blogs</a></li>
+              <li className='mx-3'><a href="#contact" target='-blank'>Contact</a></li>
+            </ul>
+          </div> */}
         </nav>
       </header>
 
@@ -50,7 +62,7 @@ export const Header = () => {
 
       <div className="resume-github mx-[65px] relative lg:-top-8 md:top-3 xl:-top-16">
         <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
-        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white ml-[8px]">Visit Github</button></a>
+        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white ml-[11px]">Visit Github</button></a>
       </div>
     </>
   )
