@@ -28,7 +28,7 @@ export const Header = () => {
       <header className='sticky top-0 z-[1]'>
         <nav className="px-1">
           <a href="#" onClick={() => ReloadPage()}>
-            <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
+            <img src={logo} alt="logo" className="w-[80px] h-[50px] object-cover" />
           </a>
         </nav>
       </header>
