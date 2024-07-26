@@ -33,14 +33,14 @@ export const Header = () => {
             </a>
           </div>
 
-          <div className="links text-white mx-40">
+          {/* <div className="links text-white mx-40">
             <ul className='flex'>
               <li className='mx-3'><a href="#contact" target='-blank'>Home</a></li>
               <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
               <li className='mx-3'><a href="https://medium.com/@qureshizayyan49" target='-blank'>Blogs</a></li>
               <li className='mx-3'><a href="#contact" target='-blank'>Contact</a></li>
             </ul>
-          </div>
+          </div> */}
         </nav>
       </header>
 
