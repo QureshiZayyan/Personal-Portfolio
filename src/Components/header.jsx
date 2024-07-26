@@ -26,10 +26,21 @@ export const Header = () => {
   return (
     <>
       <header className='sticky top-0 z-[1]'>
-        <nav className="px-1">
-          <a href="#" onClick={() => ReloadPage()}>
-            <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
-          </a>
+        <nav className="px-3 flex items-center justify-between">
+          <div className="logo">
+            <a href="#" onClick={() => ReloadPage()}>
+              <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
+            </a>
+          </div>
+
+          <div className="links text-white mx-40">
+            <ul className='flex'>
+              <li className='mx-3'><a href="#contact" target='-blank'>Home</a></li>
+              <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
+              <li className='mx-3'><a href="https://medium.com/@qureshizayyan49" target='-blank'>Blogs</a></li>
+              <li className='mx-3'><a href="#contact" target='-blank'>Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
 

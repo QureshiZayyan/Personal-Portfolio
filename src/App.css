@@ -8,15 +8,17 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  /* --footer-color: rgb(39, 38, 38); */
-  --footer-color: rgb(49, 49, 56);
-  --textclr: rgb(234, 62, 234);
+  /* --footer-color: rgb(49, 49, 56); */
+  --footer-color: rgb(35, 35, 48);
+  --textclr: rgb(190, 50, 190);
 }
 
+html,
 body {
   /* background-color: rgb(26, 26, 63); */
   /* background-color: rgb(24, 24, 44); */
-  background-color: rgb(28, 28, 56);
+  background-color: rgb(22, 22, 59);
+  scroll-behavior: smooth;
 }
 
 .name,
