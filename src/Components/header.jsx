@@ -19,17 +19,23 @@ export const Header = () => {
     };
   }, []);
 
-  const ReloadPage = () => {
-    window.location.reload();
-  }
-
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
+  };
   return (
     <>
       <header className='sticky top-0 z-[1]'>
 
         <nav className="px-3 flex items-center justify-between">
           <div className="logo">
-            <a href="#" onClick={() => ReloadPage()}>
+            <a href="#" onClick={handleLogoClick}>
               <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
             </a>
           </div>
@@ -61,8 +67,8 @@ export const Header = () => {
       </div>
 
       <div className="resume-github mx-[65px] relative lg:-top-8 md:top-3 xl:-top-16">
-        <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
-        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs hover:outline-none hover:opacity-[0.7] hover:transform hover:translate-y-[-2px] duration-300 cursor-pointer rounded-[5px] bg-white ml-[11px]">Visit Github</button></a>
+        <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
+        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs cursor-pointer rounded-[5px] bg-white ml-[11px]">Visit Github</button></a>
       </div>
     </>
   )

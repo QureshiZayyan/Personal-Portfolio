@@ -17,8 +17,8 @@ export const App = () => {
         <section className="project mt-0 mx-[40px] mb-[150px]">
           <h2 className="project-heading w-[10%] font-bold text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
           <div className="cards-container grid lg:grid-cols-4 md:grid-cols-2 my-[50px] place-items-center md:gap-y-10 md:mx-28 xl:mx-44 lg:mx-36">
-            <Cards name="News Search App" imageurl={image2} link='https://qureshizayyan.github.io/News-Web-App/' about='HTML,JS,Tailwind' />
-            <Cards name="Live Weather Search App" imageurl={image3} link='https://qureshizayyan.github.io/Weather-App/#' />
+            <Cards name="News Search App" imageurl={image2} link='https://github.com/QureshiZayyan/News-App-React' about='HTML,JS,Tailwind' />
+            <Cards name="Live Weather Search" imageurl={image3} link='https://searchweathers.vercel.app/' />
             <Cards name="ToDo List App" imageurl={image1} link='https://qureshizayyan.github.io/ToDo-List/' about='HTML,CSS,JS' />
             <Cards name="Microsft UI Clone" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' />
           </div>

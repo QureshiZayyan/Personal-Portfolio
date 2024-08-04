@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 :root {
   /* --footer-color: rgb(49, 49, 56); */
-  --footer-color: rgb(31, 31, 41);
+  --footer-color: rgb(27, 27, 30);
   --textclr: rgb(190, 50, 190);
 }
 
@@ -19,6 +19,15 @@ body {
   /* background-color: rgb(24, 24, 44); */
   background-color: rgb(22, 22, 59);
   scroll-behavior: smooth;
+}
+
+/* hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 */
+
+.btn:hover {
+  outline: none;
+  opacity: 0.8;
+  transform: translateY(-2px);
+  transition-duration: 0.3s;
 }
 
 .name,
@@ -113,13 +122,22 @@ button {
   }
 
   .cards-container .card {
-    width: 200px;
+    width: 250px;
   }
 
   .btn:hover {
-    outline: none;
-    opacity: 1;
+    transform: initial;
+    opacity: initial;
+  }
+
+  .card:hover {
+    transform: initial;
+    opacity: initial;
+  }
+
+  button:hover {
     transform: none;
+    opacity: initial;
   }
 
   .cards-container .card img {
@@ -127,7 +145,7 @@ button {
   }
 
   .cards-container .project-content {
-    height: 54px;
+    height: 58px;
   }
 
   .resume-github {
