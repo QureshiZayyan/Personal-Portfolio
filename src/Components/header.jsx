@@ -67,8 +67,8 @@ export const Header = () => {
       </div>
 
       <div className="resume-github mx-[65px] relative lg:-top-8 md:top-3 xl:-top-16">
-        <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
-        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] shadow-bs cursor-pointer rounded-[5px] bg-white ml-[11px]">Visit Github</button></a>
+        <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
+        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] cursor-pointer rounded-[5px] bg-white ml-[11px]">Visit Github</button></a>
       </div>
     </>
   )

@@ -7,21 +7,27 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
+}
+
 :root {
-  /* --footer-color: rgb(49, 49, 56); */
-  --footer-color: rgb(27, 27, 30);
+  --footer-color: rgb(25, 25, 29);
   --textclr: rgb(190, 50, 190);
 }
 
 html,
 body {
-  /* background-color: rgb(26, 26, 63); */
-  /* background-color: rgb(24, 24, 44); */
   background-color: rgb(22, 22, 59);
   scroll-behavior: smooth;
 }
-
-/* hover:outline-none hover:opacity-[0.8] hover:transform hover:translate-y-[-2px] duration-300 */
 
 .btn:hover {
   outline: none;
@@ -85,7 +91,7 @@ button {
   .about {
     overflow: hidden;
     flex-direction: column;
-    padding: 20px 15px 13px 3px;
+    padding: 24px 15px 17px 5px;
     margin: 135px 0 85px 0;
   }
 
@@ -118,11 +124,11 @@ button {
   .cards-container {
     place-content: center;
     margin: 0 auto;
-    row-gap: 26px;
+    row-gap: 38px;
   }
 
   .cards-container .card {
-    width: 250px;
+    width: 205px;
   }
 
   .btn:hover {
