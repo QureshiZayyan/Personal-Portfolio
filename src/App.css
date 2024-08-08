@@ -7,18 +7,33 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
+}
+
 :root {
-  /* --footer-color: rgb(49, 49, 56); */
-  --footer-color: rgb(31, 31, 41);
+  --footer-color: rgb(25, 25, 29);
   --textclr: rgb(190, 50, 190);
 }
 
 html,
 body {
-  /* background-color: rgb(26, 26, 63); */
-  /* background-color: rgb(24, 24, 44); */
   background-color: rgb(22, 22, 59);
   scroll-behavior: smooth;
+}
+
+.btn:hover {
+  outline: none;
+  opacity: 0.8;
+  transform: translateY(-2px);
+  transition-duration: 0.3s;
 }
 
 .name,
@@ -76,7 +91,7 @@ button {
   .about {
     overflow: hidden;
     flex-direction: column;
-    padding: 20px 15px 13px 3px;
+    padding: 24px 15px 17px 5px;
     margin: 135px 0 85px 0;
   }
 
@@ -109,17 +124,26 @@ button {
   .cards-container {
     place-content: center;
     margin: 0 auto;
-    row-gap: 26px;
+    row-gap: 38px;
   }
 
   .cards-container .card {
-    width: 200px;
+    width: 205px;
   }
 
   .btn:hover {
-    outline: none;
-    opacity: 1;
+    transform: initial;
+    opacity: initial;
+  }
+
+  .card:hover {
+    transform: initial;
+    opacity: initial;
+  }
+
+  button:hover {
     transform: none;
+    opacity: initial;
   }
 
   .cards-container .card img {
@@ -127,7 +151,7 @@ button {
   }
 
   .cards-container .project-content {
-    height: 54px;
+    height: 58px;
   }
 
   .resume-github {
