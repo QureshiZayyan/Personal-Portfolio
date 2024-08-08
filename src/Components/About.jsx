@@ -1,4 +1,6 @@
 import emailIcon from '../assets/email.png';
+// import { GiGraduateCap } from "react-icons/gi"
+import cap from '../assets/Cap.png';
 
 export const About = () => {
     return (
@@ -7,14 +9,17 @@ export const About = () => {
                 <div className="aboutMe lg:w-[35vw] md:w-[85vw]">
                     <h3 className="font-bold mb-[10px] text-2xl">About Me</h3>
 
-                    <hr className="text-purpleclr" />
+                    <hr />
                     <p className="my-[17px] font-semibold">I am extremely proficient in Front-End Development using <span className="skills font-bold">HTML5, Cascading
                         Style
                         Sheets (CSS3),
                         Bootstrap,Tailwind CSS,
                         Advance Javascript, React.JS</span></p>
                     <hr />
-                    <p className="my-[17px] font-semibold">Graduated with a degree in <span className='font-bold'>(Bachelor of Science in Information Technology)</span></p>
+                    <div className="grad flex items-center">
+                        {/* <img src={cap} alt="cap" className='inline-block w-11 mr-2' /> */}
+                        <p className="my-[17px] font-semibold">Graduated with a degree in <span className='font-bold'>(Bachelor of Science in Information Technology)</span></p>
+                    </div>
                 </div>
 
                 <div className="query lg:ml-[150px] mt-[26px] text-center md:mx-auto">
