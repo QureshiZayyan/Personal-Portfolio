@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export const Cards = (props) => {
     return (
         <>
-            <div className="card md:w-[170px] xl:w-[179px] lg:w-[160.5px] cursor-pointer hover:translate-y-[-2px] hover:opacity-[0.7] duration-300">
+            <div className="card md:w-[22vw] xl:w-[179px] lg:w-[160.5px] cursor-pointer hover:translate-y-[-2px] hover:opacity-[0.7] duration-300">
                 <a href={props.link} target='_blank'>
                     <div className="image">
                         <img className="w-full xl:h-[100px] lg:h-[84px] md:h-[100px]" src={props.imageurl} alt={props.name} />

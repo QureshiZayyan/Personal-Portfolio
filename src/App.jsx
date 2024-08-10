@@ -17,7 +17,7 @@ export const App = () => {
         <About />
         <section className="project mt-0 mx-[40px] mb-[150px]">
           <h2 className="project-heading w-[10%] font-bold text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
-          <div className="cards-container grid lg:grid-cols-5 md:grid-cols-2 my-[50px] place-items-center md:gap-y-10 md:mx-28 xl:mx-44 lg:mx-16">
+          <div className="cards-container grid lg:grid-cols-5 md:grid-cols-2 my-[50px] place-items-center md:gap-y-12 md:mx-[18vw] xl:mx-24 lg:mx-8">
             <Cards name="News Search App" imageurl={image2} link='https://github.com/QureshiZayyan/News-App-React' about='React,Tailwind' />
             <Cards name="Live Weather Search" imageurl={image3} link='https://searchweathers.vercel.app/' />
             <Cards name="Recipe Finder App" imageurl={recipe} link='https://search-recipess.vercel.app/' about='React' />
