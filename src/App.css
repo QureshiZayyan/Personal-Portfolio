@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 .card {
   overflow: hidden;
-  border-radius: 21px;
+  border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
@@ -25,7 +25,8 @@ button {
 } */
 
 :root {
-  --footer-color: rgb(25, 25, 29);
+  --footer-color: rgb(30, 30, 35);
+  /* --footer-color: rgb(25, 25, 29); */
   --textclr: rgb(190, 50, 190);
 }
 
