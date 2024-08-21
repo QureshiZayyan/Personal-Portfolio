@@ -10,11 +10,10 @@ body::-webkit-scrollbar {
 .card {
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 button {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); */
 }
 
 /* .btn:hover,
@@ -25,14 +24,13 @@ button {
 } */
 
 :root {
-  --footer-color: rgb(30, 30, 35);
-  /* --footer-color: rgb(25, 25, 29); */
+  --footer-color: #151515;
   --textclr: rgb(190, 50, 190);
 }
 
 html,
 body {
-  background-color: rgb(22, 22, 59);
+  background-color: #0F0F0F;
   scroll-behavior: smooth;
 }
 

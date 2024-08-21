@@ -33,7 +33,7 @@ export const Header = () => {
     <>
       <header className='sticky top-0 z-[1]'>
 
-        <nav className="px-3 flex items-center justify-between">
+        <nav className="px-3 flex items-center justify-between shadow-2xl">
           <div className="logo">
             <a href="#" onClick={handleLogoClick}>
               <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
