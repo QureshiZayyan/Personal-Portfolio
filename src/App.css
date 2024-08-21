@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 .card {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 18px;
 }
 
 button {
@@ -25,7 +25,16 @@ button {
 
 :root {
   --footer-color: #151515;
-  --textclr: rgb(190, 50, 190);
+  /* --textclr: rgb(190, 50, 190); */
+  --textclr: #B794E6;
+
+}
+
+.aboutMe {
+  /* background-color: var(--textclr); */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 10px 0px 10px;
 }
 
 html,
@@ -40,12 +49,18 @@ body {
 }
 
 .project-heading {
-  border-bottom: 1.5px solid rgb(179, 25, 179);
+  border-bottom: 1.5px solid var(--textclr);
 }
 
-.about,
+hr {
+  /* background-color: var(--textclr); */
+  /* background-color: black; */
+  height: 2.5px;
+}
+
 .footer,
-nav {
+nav,
+.aboutMe {
   background-color: var(--footer-color);
 }
 
@@ -71,7 +86,6 @@ button {
   }
 
   .right {
-    margin: 20px 0;
     width: 75%;
   }
 
