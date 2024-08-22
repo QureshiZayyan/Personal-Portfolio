@@ -24,14 +24,15 @@ button {
 } */
 
 :root {
-  --footer-color: #151515;
+  /* --footer-color: #151515; */
+  --footer-color: #292828;
+
   /* --textclr: rgb(190, 50, 190); */
   --textclr: #B794E6;
 
 }
 
 .aboutMe {
-  /* background-color: var(--textclr); */
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px 10px 0px 10px;
