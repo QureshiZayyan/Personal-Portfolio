@@ -10,7 +10,7 @@ export const Footer = () => {
         <>
             <footer className="footer text-white flex flex-col pt-[11px] text-center w-full">
                 <div id="contact" className="contact-details">
-                    <p className="bold font-bold text-2xl mb-[8px] lg:text-[23px]">Stay Connected</p>
+                    <p className="bold font-bold mb-[8px] lg:text-[20px] text-lg">Stay Connected</p>
                     <p className="number mb-[8px] font-medium"><a href="tel:+918793733783">(+91) 8793733783</a></p>
                     <a href="mailto:qureshizayyan49@gmail.com" className="link-color font-medium">qureshizayyan49@gmail.com</a>
                 </div>
