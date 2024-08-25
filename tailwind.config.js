@@ -4,7 +4,7 @@ export default {
     "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      
+
       backgroundColor: {
         'bcg': 'rgb(25, 25, 25)',
       },

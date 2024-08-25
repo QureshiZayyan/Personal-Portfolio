@@ -40,7 +40,7 @@ export const Header = () => {
             </a>
           </div>
 
-          {/* <div className="links text-white mx-40">
+          {/* <div className="links text-white">
             <ul className='flex'>
               <li className='mx-3'><a href="#contact" target='-blank'>Home</a></li>
               <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
@@ -53,7 +53,7 @@ export const Header = () => {
 
       <div className="intro flex items-center mt-[50px] mx-16">
         <div className="left lg:w-[60%] lg:h-auto xl:w-[49%] xl:h-auto md:w-[304px] md:h-[200px]">
-          <h1 className="text-[31.9px] font-bold text-white leading-[39px]">Hey, My Self <span className="name">Zayyan Qureshi</span>
+          <h1 className="text-3xl font-bold text-white leading-[39px]">Hey, My Self <span className="name">Zayyan Qureshi</span>
             <br />
             <span>& I&apos;m a Passionate</span>
             <br />
@@ -67,8 +67,8 @@ export const Header = () => {
       </div>
 
       <div className="resume-github mx-[65px] relative lg:-top-8 md:top-3 xl:-top-16">
-        <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] cursor-pointer rounded-[5px] bg-white hover:translate-y-[-2px] hover:opacity-[0.7] duration-300">Download Resume</button></a>
-        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] cursor-pointer rounded-[5px] bg-white ml-[11px] hover:translate-y-[-2px] hover:opacity-[0.7] duration-300">Visit Github</button></a>
+        <a href="src/assets/Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6.3px] py-[4px] font-[765] cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
+        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6.3px] py-[4px] font-[765] cursor-pointer rounded-[5px] bg-white ml-[11px]">Visit Github</button></a>
       </div>
     </>
   )

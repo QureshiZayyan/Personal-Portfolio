@@ -9,25 +9,38 @@ body::-webkit-scrollbar {
 
 .card {
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 16px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: var(--boxshadow);
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
 }
 
-button {
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); */
+.btn {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: var(--boxshadow);
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
 }
 
-/* .btn:hover,
-.card:hover {
-  transform: translateY(-2px);
-  transition: 0.3s ease-in-out;
-  opacity: 0.6;
-} */
 
 :root {
-  /* --footer-color: #151515; */
   --footer-color: #292828;
-
-  /* --textclr: rgb(190, 50, 190); */
+  /* --box-shadow:box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15); */
+  --boxshadow:
+    0 10px 15px rgba(0, 0, 0, 0.4),
+    /* Main shadow */
+    0 5px 5px rgba(0, 0, 0, 0.3),
+    /* Smaller shadow */
+    0 20px 20px rgba(0, 0, 0, 0.2),
+    /* Larger spread for depth */
+    inset 0 1px 2px rgba(255, 255, 255, 0.2);
   --textclr: #B794E6;
 
 }
@@ -61,6 +74,7 @@ hr {
 nav,
 .aboutMe {
   background-color: var(--footer-color);
+  box-shadow: var(--boxshadow);
 }
 
 .about {
