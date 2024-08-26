@@ -12,14 +12,24 @@ body::-webkit-scrollbar {
   --footer-color: #222121;
   --boxshadow:
     0 10px 15px rgba(0, 0, 0, 0.4),
+    0 -10px 15px rgba(0, 0, 0, 0.3),
+    10px 0 15px rgba(0, 0, 0, 0.3),
+    -10px 0 15px rgba(0, 0, 0, 0.3),
     0 5px 5px rgba(0, 0, 0, 0.3),
+    0 -5px 5px rgba(0, 0, 0, 0.3),
+    5px 0 5px rgba(0, 0, 0, 0.3),
+    -5px 0 5px rgba(0, 0, 0, 0.3),
     0 20px 20px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(255, 255, 255, 0.2);
   --textclr: #B794E6;
-  --textclr: #B794E6;
-  --btnCardShadow: 0 10px 20px rgba(121, 120, 120, 0.3),
-    0 6px 6px rgba(27, 27, 27, 0.22),
-    0 2px 4px rgba(19, 18, 18, 0.18);
+  --btnCardShadow:
+    0 10px 20px rgba(121, 120, 120, 0.25),
+    0 6px 12px rgba(27, 27, 27, 0.2),
+    6px 6px 15px rgba(19, 18, 18, 0.18),
+    -6px -6px 15px rgba(19, 18, 18, 0.18),
+    0 2px 4px rgba(19, 18, 18, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.1);
+
 }
 
 .footer,
@@ -51,11 +61,6 @@ nav,
     opacity: 0.8;
     transform: scale(1.1);
   }
-
-  &:focus {
-    border: none;
-    outline: none;
-  }
 }
 
 .aboutMe {
@@ -83,7 +88,6 @@ hr {
   height: 2.5px;
 }
 
-
 .about {
   border-radius: 15px;
 }
@@ -93,7 +97,7 @@ footer {
   border-top-right-radius: 15px;
 }
 
-
+/* for mobiles */
 
 @media (max-width:768px) {
   .intro {
@@ -158,7 +162,7 @@ footer {
   }
 
   .cards-container .card {
-    width: 200px;
+    width: 180px;
   }
 
   .btn:hover {
@@ -177,11 +181,11 @@ footer {
   }
 
   .cards-container .card img {
-    height: 100px;
+    height: 90px;
   }
 
   .cards-container .project-content {
-    height: 63px;
+    height: 57px;
   }
 
   .resume-github {

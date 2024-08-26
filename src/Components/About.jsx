@@ -14,7 +14,7 @@ export const About = () => {
                         Style
                         Sheets (CSS3),
                         Bootstrap,Tailwind CSS,
-                        Advance Javascript, React.JS</span></p>
+                        Advance Javascript, React.Js</span></p>
                     <hr />
                     <div className="grad flex items-center">
                         {/* <img src={cap} alt="cap" className='inline-block w-11 mr-2' /> */}
