@@ -7,42 +7,55 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+:root {
+  /* --footer-color: #292828; */
+  --footer-color: #222121;
+  --boxshadow:
+    0 10px 15px rgba(0, 0, 0, 0.4),
+    0 5px 5px rgba(0, 0, 0, 0.3),
+    0 20px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  --textclr: #B794E6;
+  --textclr: #B794E6;
+  --btnCardShadow: 0 10px 20px rgba(121, 120, 120, 0.3),
+    0 6px 6px rgba(27, 27, 27, 0.22),
+    0 2px 4px rgba(19, 18, 18, 0.18);
+}
+
+.footer,
+nav,
+.aboutMe {
+  background-color: var(--footer-color);
+  box-shadow: var(--boxshadow);
+}
+
 .card {
   overflow: hidden;
   border-radius: 16px;
   transition: transform 0.3s ease-in-out;
-  box-shadow: var(--boxshadow);
+  box-shadow: var(--btnCardShadow);
 
   &:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
+    opacity: 0.7;
+    transform: scale(1.1);
   }
 }
 
 .btn {
   transition: transform 0.3s ease-in-out;
   box-shadow: var(--boxshadow);
+  border: 2px solid var(--textclr);
+  box-shadow: var(--btnCardShadow);
 
   &:hover {
     opacity: 0.8;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
-}
 
-
-:root {
-  --footer-color: #292828;
-  /* --box-shadow:box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15); */
-  --boxshadow:
-    0 10px 15px rgba(0, 0, 0, 0.4),
-    /* Main shadow */
-    0 5px 5px rgba(0, 0, 0, 0.3),
-    /* Smaller shadow */
-    0 20px 20px rgba(0, 0, 0, 0.2),
-    /* Larger spread for depth */
-    inset 0 1px 2px rgba(255, 255, 255, 0.2);
-  --textclr: #B794E6;
-
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 
 .aboutMe {
@@ -70,12 +83,6 @@ hr {
   height: 2.5px;
 }
 
-.footer,
-nav,
-.aboutMe {
-  background-color: var(--footer-color);
-  box-shadow: var(--boxshadow);
-}
 
 .about {
   border-radius: 15px;
@@ -86,9 +93,7 @@ footer {
   border-top-right-radius: 15px;
 }
 
-button {
-  border: 2px solid var(--textclr);
-}
+
 
 @media (max-width:768px) {
   .intro {
@@ -153,7 +158,7 @@ button {
   }
 
   .cards-container .card {
-    width: 205px;
+    width: 200px;
   }
 
   .btn:hover {
@@ -172,7 +177,7 @@ button {
   }
 
   .cards-container .card img {
-    height: 110px;
+    height: 100px;
   }
 
   .cards-container .project-content {
