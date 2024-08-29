@@ -40,8 +40,9 @@ nav,
 
 .card {
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: var(--boxshadow);
+  border-radius: 14px;
+  /* box-shadow: var(--boxshadow); */
+  box-shadow: 0px 4px 12px rgba(80, 80, 80, 0.7);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   opacity: 1;
 
@@ -54,7 +55,9 @@ nav,
 .btn {
   transition: transform 0.3s ease-in-out;
   border: 2px solid var(--textclr);
-  box-shadow: var(--boxshadow);
+  /* box-shadow: var(--boxshadow); */
+  box-shadow: 0px 4px 12px rgba(80, 80, 80, 0.7);
+
 
   &:hover {
     opacity: 0.8;

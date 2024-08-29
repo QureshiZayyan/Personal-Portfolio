@@ -4,7 +4,7 @@ export const Cards = (props) => {
     return (
         <>
 
-            <div className="card xl:w-[12.5vw] lg:w-[14vw] md:w-[24vw]">
+            <div className="card xl:w-[12.5vw] lg:w-[13vw] md:w-[24vw]">
                 <a href={props.link} target='_blank'>
                     <div className="image">
                         <img className="w-full bg-black aspect-video" src={props.imageurl} alt={props.name} />
