@@ -23,10 +23,11 @@ body::-webkit-scrollbar {
     inset 0 1px 2px rgba(255, 255, 255, 0.2);
   --textclr: #B794E6;
   --btnCardShadow:
-    0 8px 10px rgba(155, 151, 151, 0.2),
-    0 20px 40px rgba(49, 48, 48, 0.15),
-    0 20px 60px rgba(121, 120, 120, 0.1);
-
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(255, 255, 255, 0.2),
+    0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .footer,
@@ -40,7 +41,7 @@ nav,
 .card {
   overflow: hidden;
   border-radius: 13px;
-  box-shadow: var(--btnCardShadow);
+  box-shadow: var(--boxshadow);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   opacity: 1;
 
@@ -53,7 +54,7 @@ nav,
 .btn {
   transition: transform 0.3s ease-in-out;
   border: 2px solid var(--textclr);
-  box-shadow: var(--btnCardShadow);
+  box-shadow: var(--boxshadow);
 
   &:hover {
     opacity: 0.8;
@@ -70,7 +71,6 @@ nav,
 html,
 body {
   background-color: #0F0F0F;
-  /* background-color: #14131A; */
   scroll-behavior: smooth;
 }
 
@@ -161,11 +161,11 @@ footer {
   }
 
   .cards-container .card {
-    width: 50vw;
+    width: 55vw;
   }
 
   .cards-container .card .image {
-    min-height: 50px;
+    /* height: 50px; */
   }
 
   .btn:hover {
