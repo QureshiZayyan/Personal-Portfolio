@@ -40,7 +40,7 @@ nav,
 
 .card {
   overflow: hidden;
-  border-radius: 13px;
+  border-radius: 10px;
   box-shadow: var(--boxshadow);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   opacity: 1;
