@@ -40,14 +40,14 @@ export const Header = () => {
             </a>
           </div>
 
-          {/* <div className="links text-white">
+          <div className="links text-white">
             <ul className='flex'>
-              <li className='mx-3'><a href="#contact" target='-blank'>Home</a></li>
+              <li className='mx-3'><a href="#" target='-blank'>Home</a></li>
               <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
-              <li className='mx-3'><a href="https://medium.com/@qureshizayyan49" target='-blank'>Blogs</a></li>
-              <li className='mx-3'><a href="#contact" target='-blank'>Contact</a></li>
+              <li className='mx-3'><a href="#" target='-blank'>Blogs</a></li>
+              <li className='mx-3'><a href="#" target='-blank'>Contact</a></li>
             </ul>
-          </div> */}
+          </div>
         </nav>
       </header>
 
@@ -57,12 +57,12 @@ export const Header = () => {
             <br />
             <span>& I&apos;m a Passionate</span>
             <br />
-            <span id="element">software developer</span>
+            <span id="element"></span>
           </h1>
         </div>
 
         <div className="right w-[50%]">
-          <img src={dev} alt="codeimg" className="img xl:w-[63%] lg:w-[63%] md:w-[70%] ml-32" />
+          <img src={dev} alt="codeimg" className="img xl:w-[56%] lg:w-[63%] md:w-[70%] ml-32" />
         </div>
       </div>
 
