@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import logo from '../assets/logo.png';
 import dev from '../assets/developer2.png';
 
+
 export const Header = () => {
   useEffect(() => {
     const options = {
@@ -40,14 +41,14 @@ export const Header = () => {
             </a>
           </div>
 
-          <div className="links text-white">
+          {/* <div className="links text-white">
             <ul className='flex'>
               <li className='mx-3'><a href="#" target='-blank'>Home</a></li>
               <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
               <li className='mx-3'><a href="#" target='-blank'>Blogs</a></li>
               <li className='mx-3'><a href="#" target='-blank'>Contact</a></li>
             </ul>
-          </div>
+          </div> */}
         </nav>
       </header>
 
