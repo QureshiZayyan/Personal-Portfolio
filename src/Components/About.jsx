@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <>
             <section className="about shadow-bs leading-6 text-white flex items-center xl:px-[170px] lg:flex-row-reverse lg:justify-between md:justify-center md:flex-col text-base pt-[32px] lg:pr-[150px] lg:pb-[23px] lg:pl-[150px] my-[73px] md:pl-[10px] md:pr-[40px] md:pb-[17px]">
-                <div className="aboutMe lg:w-[35vw] md:w-[85vw]">
+                <div className="aboutMe lg:w-[33vw] md:w-[85vw]">
                     <h3 className="font-bold mb-[10px] text-2xl">About Me</h3>
 
                     <hr />
