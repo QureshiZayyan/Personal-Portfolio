@@ -31,6 +31,10 @@ nav {
   box-shadow: var(--boxshadow);
 }
 
+#code-img {
+  width: 200px;
+}
+
 .card {
   overflow: hidden;
   border-radius: 14px;
@@ -60,9 +64,9 @@ nav {
 .aboutMe {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 10px 10px 0px 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px 10px 0px 10px;
   background-color: var(--footer-color);
   box-shadow: var(--boxshadow);
 }
@@ -112,7 +116,7 @@ footer {
 
   .right img {
     margin: 20px auto;
-    width: 100%;
+    width: 350px;
   }
 
   .left {
@@ -124,7 +128,7 @@ footer {
   .about {
     overflow: hidden;
     flex-direction: column;
-    padding: 24px 15px 17px 5px;
+    /* padding: 24px 15px 17px 15px; */
     margin: 135px 0 85px 0;
   }
 
