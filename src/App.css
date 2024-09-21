@@ -3,36 +3,35 @@
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 :root {
-  /* --footer-color: #292828; */
-  --footer-color: #222121;
+  /* --NavFooterAbout: #222121; */
+  --NavFooterAbout: #181717;
   --boxshadow:
     0 4px 8px rgba(0, 0, 0, 0.3),
     0 6px 10px rgba(0, 0, 0, 0.2),
     0 2px 2px rgba(255, 255, 255, 0.1) inset;
-  --textclr: #af99cc;
-  /* --textclr: #B794E6; */
+  --textColor: #af99cc;
   --btnCardShadow:
     0 6px 12px rgba(0, 0, 0, 0.4),
     0 12px 24px rgba(0, 0, 0, 0.3),
     0 18px 36px rgba(0, 0, 0, 0.2);
 }
 
-.footer,
-nav {
-  /* background-color: var(--footer-color); */
-  /* background-color: #151515; */
-  background-color: #1a1a1a;
-  /* background-color: #1C1B23; */
-  box-shadow: var(--boxshadow);
+body::-webkit-scrollbar {
+  display: none;
 }
 
-#code-img {
-  width: 200px;
+html,
+body {
+  background-color: #0F0F0F;
+  scroll-behavior: smooth;
+}
+
+footer,
+nav,
+.aboutMe {
+  background-color: var(--NavFooterAbout);
+  box-shadow: var(--boxshadow);
 }
 
 .card {
@@ -50,10 +49,8 @@ nav {
 
 .btn {
   transition: transform 0.3s ease-in-out;
-  border: 2px solid var(--textclr);
+  border: 2px solid var(--textColor);
   box-shadow: var(--btnCardShadow);
-
-
 
   &:hover {
     opacity: 0.8;
@@ -67,24 +64,22 @@ nav {
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 15px 10px 0px 10px;
-  background-color: var(--footer-color);
+  background-color: var(NavFooterAbout);
   box-shadow: var(--boxshadow);
 }
 
-html,
-body {
-  /* background-color: #0F0F0F; */
-  background-color: #1A1A1A;
-  scroll-behavior: smooth;
+#code-img {
+  width: 200px;
+  mix-blend-mode: lighten;
 }
 
 .name,
-#element {
-  color: var(--textclr);
+#profession {
+  color: var(--textColor);
 }
 
 .project-heading {
-  border-bottom: 1.5px solid var(--textclr);
+  border-bottom: 1.5px solid var(--textColor);
 }
 
 hr {
@@ -128,7 +123,6 @@ footer {
   .about {
     overflow: hidden;
     flex-direction: column;
-    /* padding: 24px 15px 17px 15px; */
     margin: 135px 0 85px 0;
   }
 
@@ -137,6 +131,7 @@ footer {
   }
 
   .aboutMe {
+    /* width: 90vw; */
     width: 90vw;
     overflow: hidden;
   }
@@ -166,10 +161,6 @@ footer {
 
   .cards-container .card {
     width: 55vw;
-  }
-
-  .cards-container .card .image {
-    /* height: 50px; */
   }
 
   .btn:hover {

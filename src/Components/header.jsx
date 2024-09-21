@@ -13,7 +13,7 @@ export const Header = () => {
       backDelay: 2000,
     };
 
-    const typed = new Typed('#element', options);
+    const typed = new Typed('#profession', options);
 
     return () => {
       typed.destroy();
@@ -58,7 +58,7 @@ export const Header = () => {
             <br />
             <span>& I&apos;m a Passionate</span>
             <br />
-            <span id="element"></span>
+            <span id="profession"></span>
           </h1>
         </div>
 
