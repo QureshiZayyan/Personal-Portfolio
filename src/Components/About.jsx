@@ -1,6 +1,3 @@
-import emailIcon from '../assets/email.png';
-// import { GiGraduateCap } from "react-icons/gi"
-// import cap from '../assets/Cap.png';
 import coding from '../assets/coding.png';
 
 export const About = () => {
