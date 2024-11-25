@@ -8,7 +8,7 @@ export const About = () => {
                     <h3 className="font-bold mb-[10px] text-2xl">About Me</h3>
 
                     <hr />
-                    <p className="my-[17px] font-semibold">I am extremely proficient in Front-End Development using <span className="skills font-bold">HTML5, Cascading
+                    <p className="my-[17px] font-semibold text-lg">I am extremely proficient in Front-End Development using <span className="skills font-bold">HTML5, Cascading
                         Style
                         Sheets (CSS3),
                         Bootstrap,Tailwind CSS,
@@ -16,7 +16,7 @@ export const About = () => {
                     <hr />
                     <div className="grad flex items-center">
                         {/* <img src={cap} alt="cap" className='inline-block w-11 mr-2' /> */}
-                        <p className="my-[17px] font-semibold">Graduated with a degree in <span className='font-bold'>(Bachelor of Science in Information Technology)</span></p>
+                        <p className="my-[17px] font-semibold text-lg">Graduated with a degree in <span className='font-bold'>(Bachelor of Science in Information Technology)</span></p>
                     </div>
                 </div>
 

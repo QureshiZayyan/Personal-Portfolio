@@ -25,6 +25,7 @@ html,
 body {
   background-color: #0F0F0F;
   scroll-behavior: smooth;
+  letter-spacing: 1px;
 }
 
 footer,
