@@ -44,7 +44,7 @@ nav,
 
   &:hover {
     opacity: 0.8;
-    transform: scale(1.1);
+    transform: translateY(-1.2px)
   }
 }
 
@@ -55,7 +55,7 @@ nav,
 
   &:hover {
     opacity: 0.8;
-    transform: scale(1.1);
+    transform: translateY(-1.2px)
   }
 }
 

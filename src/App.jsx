@@ -3,7 +3,6 @@ import { Header } from './Components/header';
 import { About } from './Components/About';
 import { Cards } from './Components/Card';
 import { Footer } from './Components/Footer';
-import image1 from './assets/todos.webp';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
@@ -25,6 +24,8 @@ export const App = () => {
             <Cards name="Microsoft UI" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' />
           </div>
         </section>
+
+        {/* <h3 className='text-white'>Experience</h3> */}
       </main >
       <Footer />
     </>
