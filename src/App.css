@@ -99,6 +99,19 @@ footer {
 /* for mobiles */
 
 @media (max-width:768px) {
+.profile-links .img{
+  width: 25.8px;
+}
+
+.Connected{
+  font-size: 22px;
+}
+
+.number-email{
+  font-size: 19px;
+
+}
+
   .intro {
     justify-content: center;
     width: 100%;
@@ -183,7 +196,7 @@ footer {
     height: 57px;
   }
 
-  .resume-github {
+  .resume-github {  
     position: static;
     text-align: center;
     margin: 50px 0 0 0;
