@@ -41,7 +41,7 @@ export const Header = () => {
             </a>
           </div> */}
 
-          {/* <div className="links text-white">
+        {/* <div className="links text-white">
             <ul className='flex'>
               <li className='mx-3'><a href="#" target='-blank'>Home</a></li>
               <li className='mx-3'><a href="#" target='-blank'>About Me</a></li>
@@ -68,8 +68,8 @@ export const Header = () => {
       </div>
 
       <div className="resume-github mx-[65px] relative lg:-top-8 md:top-3 xl:-top-16">
-        <a href="src/assets/Zayyan Resume.pdf" target="_blank" className="text" download><button className="btn text-[13px] px-[6px] py-[4px] font-[650] cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
-        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn text-[13px] px-[6px] py-[4px] font-[650] cursor-pointer rounded-[5px] bg-white ml-[13px]">Visit Github</button></a>
+        <a href="src/assets/Zayyan Resume.pdf" target="_blank" className="text" download><button className="btn lg:text-[15px] text-[13px] px-[6px] py-[4px] font-[650] cursor-pointer rounded-[5px] bg-white">Download Resume</button></a>
+        <a href="https://github.com/QureshiZayyan" target='_blank' className="text"><button id="btn" className="btn lg:text-[15px] text-[13px] px-[6px] py-[4px] font-[650] cursor-pointer rounded-[5px] bg-white ml-[13px]">Visit Github</button></a>
       </div>
     </>
   )
