@@ -10,8 +10,8 @@
     0 4px 8px rgba(0, 0, 0, 0.3),
     0 6px 10px rgba(0, 0, 0, 0.2),
     0 2px 2px rgba(255, 255, 255, 0.1) inset;
-    /* --textColor: #9185a0; */
-  --textColor: #b8a8ce;
+  /* --textColor: #9185a0; */
+  --textColor: #7038be;
   --btnCardShadow:
     0 6px 12px rgba(0, 0, 0, 0.4),
     0 12px 24px rgba(0, 0, 0, 0.3),
@@ -78,8 +78,10 @@ nav,
 
 .name,
 #profession {
-  color: var(--textColor);
-  text-shadow: 0 0 0.5px #000000, 0 0 20px #a59daf
+  /* color: var(--textColor); */
+   
+  color: #7038be;
+    text-shadow: 0 0 1px #000000, 0 0 10px #3b3636;
 }
 
 .project-heading {
@@ -102,18 +104,18 @@ footer {
 /* for mobiles */
 
 @media (max-width:768px) {
-.profile-links .img{
-  width: 25.8px;
-}
+  .profile-links .img {
+    width: 25.8px;
+  }
 
-.Connected{
-  font-size: 22px;
-}
+  .Connected {
+    font-size: 22px;
+  }
 
-.number-email{
-  font-size: 19px;
+  .number-email {
+    font-size: 19px;
 
-}
+  }
 
   .intro {
     justify-content: center;
@@ -199,7 +201,7 @@ footer {
     height: 57px;
   }
 
-  .resume-github {  
+  .resume-github {
     position: static;
     text-align: center;
     margin: 50px 0 0 0;
@@ -231,4 +233,3 @@ footer {
     opacity: initial;
   }
 }
-

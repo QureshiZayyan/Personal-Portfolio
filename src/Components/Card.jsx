@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 export const Cards = (props) => {
     return (
         <>
-
             <div className="card bg-white xl:w-[13.8vw] lg:w-[14vw] md:w-[24vw]">
                 <a href={props.link} target='_blank'>
                     <div className="image p-[7.8px]">
