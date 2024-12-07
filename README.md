@@ -17,7 +17,7 @@ Welcome to my Developer Portfolio! This project showcases my skills, projects, a
 
 ## 🛠️ Tech Stack
 
-- **React.js**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **React.js**: ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)A JavaScript library for building user interfaces.
+- **Tailwind CSS**: ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)A utility-first CSS framework for rapid UI development.
 
 ---
