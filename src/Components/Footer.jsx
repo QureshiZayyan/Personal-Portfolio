@@ -1,4 +1,3 @@
-import { FaWhatsapp } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -9,7 +8,7 @@ export const Footer = () => {
         <>
             <footer className="footer text-white flex flex-col pt-[12px] text-center w-full">
                 <div id="contact" className="contact-details">
-                    <p className="Connected bold font-bold mb-[10px] lg:text-[22px] xl:text-2xl">Stay Connected</p>
+                    <p className="Connected bold font-bold mb-[10px] lg:text-[20px] xl:text-2xl">Stay Connected</p>
                     <p className="number-email mb-[8px] lg:text-[17px] font-medium xl:text-[19.5px]"><a href="tel:+918793733783">(+91) 8793733783</a></p>
                     <a href="mailto:qureshizayyan49@gmail.com" className="number-email link-color font-medium lg:text-[17px]  xl:text-[18.5px]">qureshizayyan49@gmail.com</a>
                 </div>

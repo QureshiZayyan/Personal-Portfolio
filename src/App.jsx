@@ -36,7 +36,7 @@ export const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<MainContent/>} />
+          <Route path="/" element={<MainContent />} />
           <Route path="/blogs" element={<Blog />} />
         </Routes>
         <Footer />
