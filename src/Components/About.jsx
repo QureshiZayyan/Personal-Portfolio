@@ -22,15 +22,6 @@ export const About = () => {
                 <div>
                     <img src={coding} alt="" id='code-img' />
                 </div>
-
-                {/* <div className="query lg:ml-[150px] mt-[26px] text-center md:mx-auto">
-                    <p className="font-bold lg:text-lg">Any type of query & Discussion</p>
-                    <hr className="mt-[14px] mb-[8px]" />
-                    <span className="flex items-center justify-center mt-[6px] mx-auto">
-                        <img src={emailIcon} alt="'email" className="w-[30px] mr-[7px]" />
-                        <a href="mailto:qureshizayyan49@gmail.com" className="link-color font-semibold">qureshizayyan49@gmail.com</a>
-                    </span>
-                </div> */}
             </section>
         </>
     )

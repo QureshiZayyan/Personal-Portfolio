@@ -25,6 +25,44 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* From Uiverse.io by AKAspidey01 */ 
+.button {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  gap: 5px;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+  background: rgb(164, 46, 194);
+  color: #fff;
+}
+
+.button-text {
+  transform: translateX(15px);
+  font-size: 1em;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.button:hover .button-text {
+  transform: translateX(0px);
+}
+
+.button:hover{
+  padding: 4px;
+  transition-duration: 0.3s;
+}
+
+.button:hover .iconer {
+  transform: translateY(0px);
+}
+
 #mobile-menu{
   display: none;
 }
@@ -53,8 +91,8 @@ footer,.aboutMe{
   opacity: 1;
 
   &:hover {
-    opacity: 0.8;
-    transform: translateY(-1.2px)
+    opacity:0.8;
+    transform: translateY(-0.7px)
   }
 }
 
@@ -63,8 +101,8 @@ footer,.aboutMe{
   box-shadow: var(--btnCardShadow);
 
   &:hover {
-    opacity: 0.8;
-    transform: translateY(-1.2px)
+    opacity:0.8;
+    transform: translateY(-0.7px)
   }
 }
 
