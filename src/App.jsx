@@ -5,11 +5,13 @@ import { About } from './Components/About';
 import { Cards } from './Components/Card';
 import { Footer } from './Components/Footer';
 import { Blog } from './Components/Blog';
-import Navbar from './Components/Navbar';
+import { Navbar } from './Components/Navbar';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
 import recipe from './assets/recipe.png';
+import { BlogCard } from './Components/BlogCard';
+import BlogPage from './Components/BlogPage';
 
 const MainContent = () => {
   return (
@@ -38,6 +40,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogpage" element={<BlogPage />} />
         </Routes>
         <Footer />
       </Router>
