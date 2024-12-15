@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { header } from './Components/header';
 import { About } from './Components/About';
 import { Footer } from './Components/Footer';
 import { Navbar } from './Components/Navbar';
+import { Intro } from './Components/Intro';
 import { ProjectCard } from './Components/ProjectCard';
 import { BlogCard } from './Components/BlogCard';
 import { BlogPage } from './Components/BlogPage';
@@ -15,7 +15,7 @@ import recipe from './assets/recipe.png';
 const MainContent = () => {
   return (
     <main>
-      <header />
+      <Intro />
       <About />
       <section className="project mt-0 mx-[40px] mb-[150px]">
         <h2 className="project-heading w-[10%] font-bold xl:text-4xl text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>

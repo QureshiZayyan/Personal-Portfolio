@@ -2,7 +2,7 @@
 import dev from '../assets/developer2.png';
 // import Typed from 'typed.js';
 
-export const header = () => {
+export const Intro = () => {
   // useEffect(() => {
   //   const options = {
   //     strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],

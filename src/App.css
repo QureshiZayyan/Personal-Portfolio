@@ -92,7 +92,7 @@ footer,.aboutMe{
 
   &:hover {
     opacity:0.9;
-    transform: translateY(-1.1px)
+    transform: translateY(-0.8px)
   }
 }
 
@@ -102,7 +102,7 @@ footer,.aboutMe{
 
   &:hover {
     opacity:0.9;
-    transform: translateY(-1.1px)
+    transform: translateY(-0.8px)
   }
 }
 
