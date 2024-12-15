@@ -69,7 +69,8 @@ body::-webkit-scrollbar {
 
 html,
 body {
-  background-color: #0F0F0F;
+  /* background-color: #0F0F0F; */
+  background: black;
   scroll-behavior: smooth;
   letter-spacing: 1px;
 }
@@ -91,7 +92,7 @@ footer,.aboutMe{
 
   &:hover {
     opacity:0.9;
-    transform: translateY(-1px)
+    transform: translateY(-1.1px)
   }
 }
 
@@ -101,7 +102,7 @@ footer,.aboutMe{
 
   &:hover {
     opacity:0.9;
-    transform: translateY(-1px)
+    transform: translateY(-1.1px)
   }
 }
 

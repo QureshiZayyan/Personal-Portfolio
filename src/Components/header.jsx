@@ -1,6 +1,6 @@
-import Typed from 'typed.js';
 import { useEffect } from 'react';
 import dev from '../assets/developer2.png';
+import Typed from 'typed.js';
 
 export const Header = () => {
   useEffect(() => {

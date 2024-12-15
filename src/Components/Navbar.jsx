@@ -39,7 +39,7 @@ export const Navbar = () => {
                         <ul className='flex'>
                             <li className='mx-4 font-semibold'><NavLink to='/' className={({ isActive }) =>
                                 isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'}>Home</NavLink></li>
-                            {/* <li className='mx-4 font-semibold'><a href="#" target='-blank'>About Me</a></li> */}
+                            <li className='mx-4 font-semibold'><a href="#" target='-blank'>About</a></li>
                             <li className='mx-4 font-semibold'><NavLink to="/blogs" className={({ isActive }) =>
                                 isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'
                             }>Blogs</NavLink></li>
