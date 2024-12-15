@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { BlogItems } from '../Blog';
+import { BlogItems } from '../js/Blog'
 
 export const BlogPage = () => {
     const { id } = useParams(); // Get the id from the URL

@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from './Components/Header';
+import { header } from './Components/header';
 import { About } from './Components/About';
 import { Footer } from './Components/Footer';
 import { Navbar } from './Components/Navbar';

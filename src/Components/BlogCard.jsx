@@ -1,4 +1,4 @@
-import { BlogItems } from '../Blog'
+import { BlogItems } from '../js/Blog'
 import vscode from '../assets/vscode.png'
 import { Link } from 'react-router-dom'
 
