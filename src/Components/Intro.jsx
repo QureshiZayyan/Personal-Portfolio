@@ -1,22 +1,22 @@
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 import dev from '../assets/developer2.png';
-// import Typed from 'typed.js';
+import Typed from 'typed.js';
 
 export const Intro = () => {
-  // useEffect(() => {
-  //   const options = {
-  //     strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],
-  //     typeSpeed: 30,
-  //     backSpeed: 14,
-  //     backDelay: 2000,
-  //   };
+  useEffect(() => {
+    const options = {
+      strings: ['Technology Enthusiast', 'Programmer', 'Software Developer'],
+      typeSpeed: 30,
+      backSpeed: 14,
+      backDelay: 2000,
+    };
 
-  //   const typed = new Typed('#profession', options);
+    const typed = new Typed('#profession', options);
 
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <>

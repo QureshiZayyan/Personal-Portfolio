@@ -3,23 +3,28 @@ import { useParams } from 'react-router-dom';
 import { BlogItems } from '../js/Blog'
 
 export const BlogPage = () => {
-    const { id } = useParams(); // Get the id from the URL
+    const { id } = useParams();
     const [blog, setBlog] = useState(null);
 
     useEffect(() => {
-        // Find the blog item by id
         const foundBlog = BlogItems.find((item) => item.id === parseInt(id));
-        setBlog(foundBlog); // Update state with the found blog
-    }, [id]); // Re-run when the id changes
+        setBlog(foundBlog);
+    }, [id]);
 
     if (!blog) {
         return <p>Blog not found</p>;
     }
 
     return (
-        <div className="text-white">
-            <h2>{blog.heading}</h2>
-            <p>{blog.content}</p>
+        <div id='BlogPage' className='px-9 my-[50px]'>
+            <article>
+                <div className="text-white">
+                    <h2 className='text-3xl text-txtclr'>{blog.heading}</h2>
+                    <p className='mt-4'>{blog.content1}</p>
+                    <p className='mt-4'>{blog.content2}</p>
+                    <p className='mt-4'>{blog.content3}</p>
+                </div>
+            </article>
         </div>
     );
 };

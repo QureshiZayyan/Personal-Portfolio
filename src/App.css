@@ -6,26 +6,26 @@
 :root {
   --NavFooterAbout: #181717;
   --Navbarboxshadow:
-     0 4px 8px rgba(0, 0, 0, 0.3),
-     0 6px 10px rgba(0, 0, 0, 0.2), 
-     0 2px 2px rgba(0, 0, 0, 0.1) inset;
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 6px 10px rgba(0, 0, 0, 0.2),
+    0 2px 2px rgba(0, 0, 0, 0.1) inset;
   --AboutFootershadow:
-  0 4px 8px rgba(0, 0, 0, 0.3),
-  0 6px 10px rgba(0, 0, 0, 0.2),
-  0 2px 2px rgba(255, 255, 255, 0.1) inset;
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 6px 10px rgba(0, 0, 0, 0.2),
+    0 2px 2px rgba(255, 255, 255, 0.1) inset;
   --textColor: #8252c6;
   --btnCardShadow:
     0 6px 12px rgba(0, 0, 0, 0.4),
     0 12px 24px rgba(0, 0, 0, 0.3),
     0 18px 36px rgba(0, 0, 0, 0.2);
-    --animations:  opacity 0.2s ease-in-out,transform 0.2s ease-in-out;
+  --animations: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* From Uiverse.io by AKAspidey01 */ 
+/* From Uiverse.io by AKAspidey01 */
 .button {
   display: flex;
   align-items: center;
@@ -34,14 +34,14 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   border: none;
   overflow: hidden;
-  background:#8252c6;
+  background: #8252c6;
   color: #fff;
 }
 
 .button-text {
   transform: translateX(15px);
   /* font-size: 1em; */
-  font-weight:500;
+  font-weight: 500;
   transition-duration: 0.3s;
 }
 
@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
   transform: translateX(0px);
 }
 
-.button:hover{
+.button:hover {
   padding: 4px;
   transition-duration: 0.3s;
 }
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
   transform: translateY(0px);
 }
 
-#mobile-menu{
+#mobile-menu {
   display: none;
 }
 
@@ -76,11 +76,13 @@ body {
 }
 
 footer,
-.aboutMe,nav{
+.aboutMe,
+nav {
   background-color: var(--NavFooterAbout);
 }
 
-footer,.aboutMe{
+footer,
+.aboutMe {
   box-shadow: var(--AboutFootershadow);
 }
 
@@ -91,7 +93,7 @@ footer,.aboutMe{
   transition: var(--animations);
 
   &:hover {
-    opacity:0.9;
+    opacity: 0.9;
     transform: translateY(-0.8px)
   }
 }
@@ -101,7 +103,7 @@ footer,.aboutMe{
   box-shadow: var(--btnCardShadow);
 
   &:hover {
-    opacity:0.9;
+    opacity: 0.9;
     transform: translateY(-0.8px)
   }
 }
@@ -142,13 +144,13 @@ footer {
   border-top-right-radius: 15px;
 }
 
-nav{
-box-shadow: var(--AboutFootershadow);
+nav {
+  box-shadow: var(--AboutFootershadow);
 }
 
 /* for mobiles */
 
- @media (max-width:768px) {
+@media (max-width:768px) {
   .profile-links .img {
     width: 25.8px;
   }
@@ -266,12 +268,13 @@ box-shadow: var(--AboutFootershadow);
     margin-bottom: 90px;
   }
 
-  .blog-card{
+  .blog-card {
     width: 75vw;
     margin-bottom: 50px;
   }
- }
-  /* ul{
+}
+
+/* ul{
     position: relative;
     flex-direction: column;
     background: red;
@@ -286,7 +289,7 @@ box-shadow: var(--AboutFootershadow);
    top: 0;
   } */
 
-  /* #mobile-menu{
+/* #mobile-menu{
     display: block;
     position: absolute;
     top: 0;

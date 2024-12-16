@@ -14,6 +14,9 @@ export default {
       },
       borderColor: {
         bdrclr: '#8252c6',
+      },
+      textColor:{
+        txtclr:'#8252c6',
       }
     },
   },
