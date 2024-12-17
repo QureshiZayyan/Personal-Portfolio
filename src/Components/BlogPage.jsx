@@ -16,7 +16,7 @@ export const BlogPage = () => {
     }
 
     return (
-        <div id='BlogPage' className='px-9 my-[50px]'>
+        <section id='BlogPage' className='px-9 my-[50px]'>
             <article>
                 <div className="text-white">
                     <h2 className='text-3xl text-txtclr'>{blog.heading}</h2>
@@ -25,6 +25,6 @@ export const BlogPage = () => {
                     <p className='mt-4'>{blog.content3}</p>
                 </div>
             </article>
-        </div>
+        </section>
     );
 };

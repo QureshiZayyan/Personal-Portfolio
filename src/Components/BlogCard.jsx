@@ -10,7 +10,7 @@ export const BlogCard = () => {
     }
 
     return (
-        <div className='blogContainer grid lg:grid-cols-3 md:grid-cols-2 my-[80px] place-items-center md:gap-y-11 md:mx-[16vw] xl:mx-40 lg:mx-[11.5vw]'>
+        <section id='blogContainer' className='grid lg:grid-cols-3 md:grid-cols-2 my-[80px] place-items-center md:gap-y-11 md:mx-[16vw] xl:mx-40 lg:mx-[11.5vw]'>
             {BlogItems.map((item) => (
                 <div className="blog-card bg-white xl:w-[13.8vw] lg:w-[22vw] md:w-[24vw] rounded-lg" key={item.id}>
                     <div className="image p-[8px]">
@@ -27,7 +27,7 @@ export const BlogCard = () => {
                     </div>
                 </div>
             ))}
-        </div>
+        </section>
     )
 }
 

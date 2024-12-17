@@ -1,4 +1,4 @@
-export const ProjectCard= ({ name, about, imageurl, link }) => {
+export const ProjectCard = ({ name, about, imageurl, link }) => {
     return (
         <>
             <div className="card bg-white xl:w-[13.8vw] lg:w-[14vw] md:w-[24vw]">

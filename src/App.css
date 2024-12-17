@@ -135,7 +135,7 @@ hr {
   height: 2.5px;
 }
 
-.about {
+#about {
   border-radius: 15px;
 }
 
@@ -186,13 +186,13 @@ nav {
     height: 250px;
   }
 
-  .about {
+  #about {
     overflow: hidden;
     flex-direction: column;
     margin: 135px 0 85px 0;
   }
 
-  .about hr {
+  #about hr {
     width: 100%;
   }
 
@@ -264,7 +264,7 @@ nav {
     left: -15px;
   }
 
-  .project {
+  #project {
     margin-bottom: 90px;
   }
 
