@@ -45,6 +45,10 @@ body::-webkit-scrollbar {
   transition-duration: 0.3s;
 }
 
+/* #about .icons{
+  width: 100px;
+} */
+
 .iconer {
   transform: translateY(35px);
   transition-duration: 0.3s;
@@ -76,13 +80,11 @@ body {
 }
 
 footer,
-.aboutMe,
 nav {
   background-color: var(--NavFooterAbout);
 }
 
-footer,
-.aboutMe {
+footer {
   box-shadow: var(--AboutFootershadow);
 }
 
@@ -122,10 +124,24 @@ footer,
 }
 
 .name,
-#profession {
-  color: var(--textColor);
-  text-shadow: 0 0 1px #000, 0 0 10px #554c4c;
+#profession,
+.about-me-heading {
+  /* color: var(--textColor); */
+  background: linear-gradient(90deg, #8252c6, #bd9aed, #8252c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 
 .project-heading {
   border-bottom: 1.5px solid var(--textColor);

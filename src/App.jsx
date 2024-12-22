@@ -1,12 +1,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { About } from './Components/About';
+import { AboutMe } from './Components/AboutMe';
 import { Footer } from './Components/Footer';
 import { Navbar } from './Components/Navbar';
 import { Intro } from './Components/Intro';
 import { ProjectCard } from './Components/ProjectCard';
 import { BlogCard } from './Components/BlogCard';
 import { BlogPage } from './Components/BlogPage';
+import { AboutPage } from './Components/AboutPage';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
@@ -17,7 +18,7 @@ const MainContent = () => {
     <>
       <Intro />
       <main>
-        <About />
+        <AboutMe />
         <section id='project' className="mt-0 mx-[40px] mb-[150px]">
           <h2 className="project-heading w-[10%] font-bold xl:text-4xl text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
           <div className="cards-container grid lg:grid-cols-4 md:grid-cols-2 
@@ -43,6 +44,7 @@ export const App = () => {
           <Route path="/" element={<MainContent />} />
           <Route path="/blogs" element={<BlogCard />} />
           <Route path="/blogpage/:id" element={<BlogPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
         <Footer />
       </Router>
