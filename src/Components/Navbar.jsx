@@ -18,7 +18,7 @@ export const Navbar = () => {
     return (
         <>
             <header className='sticky top-0 z-[1]'>
-                <nav className="px-3 flex items-center justify-center py-4">
+                <nav className="px-3 flex items-center justify-start py-4">
                     {/* <div className="logo">
                         <a href="#" onClick={handleLogoClick}>
                             <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />

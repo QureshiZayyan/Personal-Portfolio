@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { BlogItems } from '../js/Blog'
+import { BlogItems } from '../states/Blog'
 
 export const BlogPage = () => {
     const { id } = useParams();
@@ -19,10 +19,10 @@ export const BlogPage = () => {
         <section id='BlogPage' className='px-9 my-[50px]'>
             <article>
                 <div className="text-white">
-                    <h2 className='text-3xl text-txtclr'>{blog.heading}</h2>
-                    <p className='mt-4'>{blog.content1}</p>
-                    <p className='mt-4'>{blog.content2}</p>
-                    <p className='mt-4'>{blog.content3}</p>
+                    {/* <h2 className='text-3xl text-txtclr'>{blog.Heading}</h2> */}
+                    <p className='mt-4'>{blog.Content}</p>
+                    {/* <p className='mt-4'>{blog.content2}</p>
+                    <p className='mt-4'>{blog.content3}</p> */}
                 </div>
             </article>
         </section>

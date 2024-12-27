@@ -1,7 +1,7 @@
 export const ProjectCard = ({ name, about, imageurl, link }) => {
     return (
         <>
-            <div className="card bg-white xl:w-[13.8vw] lg:w-[14vw] md:w-[24vw]">
+            <div className="card bg-white xl:w-[13.8vw] lg:w-[14vw] md:w-[20.5vw]">
                 <a href={link} target='_blank'>
                     <div className="image p-[7.5px]">
                         <img className="w-full rounded-[14px] bg-black aspect-video" src={imageurl} alt={name} />

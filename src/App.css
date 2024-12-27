@@ -45,9 +45,9 @@ body::-webkit-scrollbar {
   transition-duration: 0.3s;
 }
 
-/* #about .icons{
-  width: 100px;
-} */
+#about .icons {
+  /* width: 800px; */
+}
 
 .iconer {
   transform: translateY(35px);
@@ -125,7 +125,7 @@ footer {
 
 .name,
 #profession,
-.about-me-heading {
+.about-me-heading{
   /* color: var(--textColor); */
   background: linear-gradient(90deg, #8252c6, #bd9aed, #8252c6);
   -webkit-background-clip: text;
@@ -162,11 +162,18 @@ footer {
 
 nav {
   box-shadow: var(--AboutFootershadow);
+  justify-content: center;
 }
 
 /* for mobiles */
 
 @media (max-width:768px) {
+
+  nav {
+    /* justify-content: center;
+    background: red; */
+  }
+
   .profile-links .img {
     width: 25.8px;
   }
