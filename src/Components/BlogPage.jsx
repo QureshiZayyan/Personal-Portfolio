@@ -1,17 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
+import { StateContext } from '../states/StateProvider';
 import { useParams } from 'react-router-dom';
-import { BlogItems } from '../states/Blog'
 
 export const BlogPage = () => {
+    const { renderFullBlog } = useContext(StateContext);
+    const [selectedBlog, setSelectedBlog] = useState(null);
     const { id } = useParams();
-    const [blog, setBlog] = useState(null);
 
     useEffect(() => {
-        const foundBlog = BlogItems.find((item) => item.id === parseInt(id));
-        setBlog(foundBlog);
+        if (renderFullBlog) {
+            const foundBlog = renderFullBlog.find((item) => item.id === parseInt(id));
+            setSelectedBlog(foundBlog || null);
+        }
     }, [id]);
 
-    if (!blog) {
+    if (!selectedBlog) {
         return <p>Blog not found</p>;
     }
 
@@ -19,12 +22,16 @@ export const BlogPage = () => {
         <section id='BlogPage' className='px-9 my-[50px]'>
             <article>
                 <div className="text-white">
-                    {/* <h2 className='text-3xl text-txtclr'>{blog.Heading}</h2> */}
-                    <p className='mt-4'>{blog.Content}</p>
-                    {/* <p className='mt-4'>{blog.content2}</p>
-                    <p className='mt-4'>{blog.content3}</p> */}
+                    <h2 className='text-3xl text-txtclr'>{selectedBlog.Title}</h2>
+                    {/* <p className='mt-4'>{selectedBlog.Content}</p> */}
+                    <div className='mt-4' dangerouslySetInnerHTML={{ __html: selectedBlog.Content }} />
                 </div>
             </article>
         </section>
     );
 };
+
+// React Developer Tools
+// Improves React development with component and state inspection.
+// Simple React Snippets
+// Provides commonly used React snippets for faster coding.
