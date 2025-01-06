@@ -7,7 +7,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { BiLogoCss3 } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 
-export const AboutMe = () => {
+export const Aboutme = () => {
 
     return (
         <>
