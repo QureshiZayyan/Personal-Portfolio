@@ -25,6 +25,91 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.solar-system {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2.5px solid white; /* Stationary border */
+  border-radius: 50%;
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 15s linear infinite;
+}
+
+.icon {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  background: transparent;
+}
+
+/* Position the icons on the border */
+.icon:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #7F18F9);
+
+}
+.icon:nth-child(2) {
+  top: 14.64%;
+  left: 85.36%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #3EBFF8) 
+}
+
+.icon:nth-child(3) {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #00D8FF) 
+}
+
+.icon:nth-child(4) {
+  top: 85.36%;
+  left: 85.36%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #553E83) 
+}
+.icon:nth-child(5) {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #E5532D) 
+}
+.icon:nth-child(6) {
+  top: 85.36%;
+  left: 14.64%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #2D53E7) }
+.icon:nth-child(7) {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #F7DF1E) 
+}
+.icon:nth-child(8) {
+  top: 50%;
+  left: 14.64%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Rotate the orbit container to make icons move */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* From Uiverse.io by AKAspidey01 */
 .button {
   display: flex;
