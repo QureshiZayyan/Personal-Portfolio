@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import vscode from '../assets/vscode.png';
 
 export const BlogCard = () => {
-    // const { ID } = useParams();
+  
     const { blog, setBlog, setRenderFullBlog } = useContext(StateContext);
 
     const FetchData = async () => {
@@ -51,6 +51,6 @@ export const BlogCard = () => {
         </section>
     )
 }
-// this is my react component
+
 
 
