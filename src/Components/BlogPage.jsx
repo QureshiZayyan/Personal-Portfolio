@@ -30,8 +30,3 @@ export const BlogPage = () => {
         </section>
     );
 };
-
-// React Developer Tools
-// Improves React development with component and state inspection.
-// Simple React Snippets
-// Provides commonly used React snippets for faster coding.
