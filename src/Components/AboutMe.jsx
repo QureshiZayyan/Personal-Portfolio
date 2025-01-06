@@ -1,4 +1,3 @@
-import coding from '../assets/coding.png';
 import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
