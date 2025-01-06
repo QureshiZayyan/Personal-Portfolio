@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Aboutme } from './components/Aboutme'
 import { Footer } from './components/Footer';
+import { Skills } from './components/Skills';
 import { Navbar } from './components/Navbar';
 import { Intro } from './components/Intro';
 import { BlogCard } from './components/BlogCard';
@@ -18,7 +18,7 @@ const MainContent = () => {
     <>
       <Intro />
       <main>
-        <Aboutme />
+        <Skills />
         <section id='project' className="mt-0 mx-[40px] mb-[150px]">
           <h2 className="project-heading w-[10%] font-bold xl:text-4xl text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
           <div className="cards-container grid lg:grid-cols-4 md:grid-cols-2 

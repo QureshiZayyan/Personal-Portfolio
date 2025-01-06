@@ -7,7 +7,7 @@ import { BiLogoCss3 } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaVuejs } from "react-icons/fa6";
 
-export const Aboutme = () => {
+export const Skills = () => {
 
     return (
         <>
