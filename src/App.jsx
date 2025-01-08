@@ -1,13 +1,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/Navbar.jsx';
-import { Intro } from './components/Intro.jsx';
-import { Skills } from './components/Skills.jsx';
-import { BlogCard } from './components/BlogCard.jsx';
-import { ProjectCard } from './components/ProjectCard.jsx';
-import { BlogPage } from './components/BlogPage.jsx';
-import { AboutPage } from './components/AboutPage.jsx';
-import { Footer } from './components/Footer.jsx'
+import { Navbar } from './components/Navbar';
+import { Intro } from './components/Intro';
+import { Skills } from './components/Skills';
+import { BlogCard } from './components/BlogCard';
+import { ProjectCard } from './components/ProjectCard';
+import { BlogPage } from './components/BlogPage';
+import { AboutPage } from './components/AboutPage';
+import { Footer } from './components/Footer'
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
