@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 export const Footer = () => {
     return (
         <>
-            <footer className="footer text-white flex flex-col pt-[12px] text-center w-full">
+            <footer className="footer text-white flex flex-col pt-[12px] text-center w-full relative bottom-[-2.5px]">
                 <div id="contact" className="contact-details">
                     <p className="Connected bold font-bold mb-[10px] lg:text-[20px] xl:text-2xl">Stay Connected</p>
                     <p className="number-email mb-[8px] lg:text-[17px] font-medium xl:text-[19.5px]"><a href="tel:+918793733783">(+91) 8793733783</a></p>

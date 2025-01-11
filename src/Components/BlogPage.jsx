@@ -3,13 +3,13 @@ import { StateContext } from '../states/StateProvider';
 import { useParams } from 'react-router-dom';
 
 export const BlogPage = () => {
-    const { renderFullBlog } = useContext(StateContext);
+    const { blog } = useContext(StateContext);
     const [selectedBlog, setSelectedBlog] = useState(null);
     const { id } = useParams();
 
     useEffect(() => {
-        if (renderFullBlog) {
-            const foundBlog = renderFullBlog.find((item) => item.id === parseInt(id));
+        if (blog) {
+            const foundBlog = blog.find((item) => item.id === parseInt(id));
             setSelectedBlog(foundBlog || null);
         }
     }, [id]);
@@ -22,9 +22,9 @@ export const BlogPage = () => {
         <section id='BlogPage' className='px-9 my-[50px]'>
             <article>
                 <div className="text-white">
-                    <h2 className='text-3xl text-txtclr'>{selectedBlog.Title}</h2>
-                    {/* <p className='mt-4'>{selectedBlog.Content}</p> */}
-                    <div className='mt-4' dangerouslySetInnerHTML={{ __html: selectedBlog.Content }} />
+                    <h2 className='text-3xl text-txtclr'>{selectedBlog.title}</h2>
+
+                    <div className='mt-4' dangerouslySetInnerHTML={{ __html: selectedBlog.content }} />
                 </div>
             </article>
         </section>

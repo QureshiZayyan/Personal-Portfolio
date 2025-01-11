@@ -25,26 +25,66 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.solar-system {
+/* loading animation */
+
+.loader {
+  width: 215px;
+  height: 265px;
+  display: block;
+  /* margin: auto; */
   position: relative;
+  background: #FFF;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.loader::after {
+  content: '';
+  width: calc(100% - 30px);
+  height: calc(100% - 15px);
+  top: 15px;
+  left: 15px;
+  position: absolute;
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+    linear-gradient(#DDD 100px, transparent 0),
+    linear-gradient(#DDD 16px, transparent 0),
+    linear-gradient(#DDD 50px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
+  background-position: -185px 0, center 0, center 115px, center 142px;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+  to {
+    background-position: 185px 0, center 0, center 115px, center 142px;
+  }
+}
+
+/* loading animation */
+
+.solar-system {
+  /* position: relative; */
   width: 300px;
   height: 300px;
-  border: 2.5px solid white; /* Stationary border */
+  border: 2.5px solid white;
   border-radius: 50%;
+  filter: drop-shadow(0 2px 2px #030303);
 }
 
 .orbit {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
-  animation: rotate 15s linear infinite;
+  animation: rotate 30s linear infinite;
 }
 
 .icon {
   position: absolute;
   font-size: 30px;
-  color: #fff;
-  background: transparent;
+  width: 140px;
+  height: 58px;
 }
 
 /* Position the icons on the border */
@@ -55,55 +95,62 @@ body::-webkit-scrollbar {
   filter: drop-shadow(0 4px 10px #7F18F9);
 
 }
+
 .icon:nth-child(2) {
   top: 14.64%;
   left: 85.36%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 4px 10px #3EBFF8) 
+  filter: drop-shadow(0 4px 10px #3EBFF8)
 }
 
 .icon:nth-child(3) {
   top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 4px 10px #00D8FF) 
+  filter: drop-shadow(0 4px 10px #00D8FF)
 }
 
 .icon:nth-child(4) {
   top: 85.36%;
   left: 85.36%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 4px 10px #553E83) 
+  filter: drop-shadow(0 4px 10px #553E83)
 }
+
 .icon:nth-child(5) {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 4px 10px #E5532D) 
+  filter: drop-shadow(0 4px 10px #E5532D)
 }
+
 .icon:nth-child(6) {
   top: 85.36%;
   left: 14.64%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 4px 10px #2D53E7) }
+  filter: drop-shadow(0 4px 10px #2D53E7)
+}
+
 .icon:nth-child(7) {
   top: 50%;
   left: 0;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0 4px 10px #F7DF1E) 
-}
-.icon:nth-child(8) {
-  top: 50%;
-  left: 14.64%;
-  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #F7DF1E)
 }
 
+.icon:nth-child(8) {
+  left: 10.64%;
+  top: 43px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 4px 10px #307C33);
+}
 
 /* Rotate the orbit container to make icons move */
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -158,20 +205,16 @@ body::-webkit-scrollbar {
 
 html,
 body {
-  /* background-color: #0F0F0F; */
-  background: black;
+  background-color: #0F0F0F;
   scroll-behavior: smooth;
   letter-spacing: 1px;
 }
 
-footer,
-nav {
-  background-color: var(--NavFooterAbout);
-}
-
 footer {
+  background-color: #151515;
   box-shadow: var(--AboutFootershadow);
 }
+
 
 .card {
   overflow: hidden;
@@ -210,7 +253,7 @@ footer {
 
 .name,
 #profession,
-.about-me-heading{
+.about-me-heading {
   /* color: var(--textColor); */
   background: linear-gradient(90deg, #8252c6, #bd9aed, #8252c6);
   -webkit-background-clip: text;
@@ -246,8 +289,11 @@ footer {
 }
 
 nav {
-  box-shadow: var(--AboutFootershadow);
   justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+    0 6px 10px rgba(0, 0, 0, 0.2),
+    0 2px 2px rgba(255, 255, 255, 0.1);
+  background: #151515;
 }
 
 /* for mobiles */
