@@ -21,7 +21,7 @@ const MainContent = () => {
         <Skills />
         <section id='project' className="mt-0 mx-[40px] mb-[150px]">
           <h2 className="project-heading w-[10%] font-bold xl:text-4xl text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
-          <div className="cards-container grid lg:grid-cols-4 md:grid-cols-2 
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 
         my-[50px] place-items-center md:gap-y-11 md:mx-[16vw] xl:mx-40 lg:mx-[10vw]">
             <ProjectCard name="News App" imageurl={image2} link='https://searchnewss.vercel.app/' about='React,Tailwind' />
             <ProjectCard name="Live Weather App" imageurl={image3} link='https://searchweathers.vercel.app/' />
@@ -30,7 +30,7 @@ const MainContent = () => {
             <ProjectCard name="Microsoft UI" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' />
           </div>
         </section>
-      </main>
+      </main >
     </>
   )
 }

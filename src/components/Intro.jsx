@@ -36,11 +36,7 @@ export const Intro = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-    },
-    hover: {
-      scale: 1.1,
-      transition: { duration: 0.2, ease: "easeInOut" },
+      transition: { delay: 0.2, duration: 0.5, ease: "easeInOut" },
     },
   };
 

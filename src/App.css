@@ -274,7 +274,7 @@ nav {
   }
 
   .right img {
-    margin: 20px auto;
+    margin: 5px auto;
     width: 350px;
   }
 
@@ -324,8 +324,9 @@ nav {
     row-gap: 38px;
   }
 
-  .cards-container .card {
-    width: 55vw;
+  .card {
+    width: 47vw;
+    margin-bottom: 25px;
   }
 
   .btn:hover {

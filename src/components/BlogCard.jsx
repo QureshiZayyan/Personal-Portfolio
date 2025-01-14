@@ -1,7 +1,7 @@
 import { useEffect, useContext, useState } from 'react'
 import { StateContext } from '../states/StateProvider';
 import { Link } from 'react-router-dom'
-import {SkeletonCard} from './SkeletonCard'
+import { SkeletonCard } from './SkeletonCard'
 
 export const BlogCard = () => {
 
@@ -38,7 +38,7 @@ export const BlogCard = () => {
             {loading ? <SkeletonCard />
                 :
                 blog.map((item) => (
-                    <div className="blog-card mb-8 relative bg-white xl:w-[13.8vw] lg:w-[22.5vw] md:w-[34vw] rounded-[12px]" key={item.id}>
+                    <div className="blog-card mb-8 relative bg-white xl:w-[20vw] lg:w-[22.5vw] md:w-[34vw] rounded-[12px]" key={item.id}>
                         {/* <div className="image p-[8px]">
                             <img className="w-full rounded-[15px] bg-black aspect-video" src={item.image ? item.image.url : null} alt={item.title} />
                         </div> */}
