@@ -25,50 +25,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* loading animation */
-
-.loader {
-  width: 215px;
-  height: 265px;
-  display: block;
-  /* margin: auto; */
-  position: relative;
-  background: #FFF;
-  box-sizing: border-box;
-  border-radius: 15px;
-}
-
-.loader::after {
-  content: '';
-  width: calc(100% - 30px);
-  height: calc(100% - 15px);
-  top: 15px;
-  left: 15px;
-  position: absolute;
-  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
-    linear-gradient(#DDD 100px, transparent 0),
-    linear-gradient(#DDD 16px, transparent 0),
-    linear-gradient(#DDD 50px, transparent 0);
-  background-repeat: no-repeat;
-  background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
-  background-position: -185px 0, center 0, center 115px, center 142px;
-  box-sizing: border-box;
-  animation: animloader 1s linear infinite;
-}
-
-@keyframes animloader {
-  to {
-    background-position: 185px 0, center 0, center 115px, center 142px;
-  }
-}
-
-/* loading animation */
-
 .solar-system {
   /* position: relative; */
-  width: 300px;
-  height: 300px;
-  border: 2.5px solid white;
+  width: 250px;
+  height: 270px;
+  /* border: 2.5px solid white; */
   border-radius: 50%;
   filter: drop-shadow(0 2px 2px #030303);
 }
@@ -219,23 +180,6 @@ footer {
 .card {
   overflow: hidden;
   border-radius: 14px;
-  box-shadow: var(--btnCardShadow);
-  transition: var(--animations);
-
-  &:hover {
-    opacity: 0.9;
-    transform: translateY(-0.8px)
-  }
-}
-
-.btn {
-  transition: var(--animations);
-  box-shadow: var(--btnCardShadow);
-
-  &:hover {
-    opacity: 0.9;
-    transform: translateY(-0.8px)
-  }
 }
 
 .aboutMe {
@@ -343,7 +287,8 @@ nav {
   #about {
     overflow: hidden;
     flex-direction: column;
-    margin: 135px 0 85px 0;
+    margin: 135px 0 105px 0;
+    padding-bottom: 40px;
   }
 
   #about hr {
@@ -422,70 +367,7 @@ nav {
     margin-bottom: 90px;
   }
 
-  .blog-card {
-    width: 75vw;
-    margin-bottom: 50px;
-  }
 }
-
-/* ul{
-    position: relative;
-    flex-direction: column;
-    background: red;
-    gap: 20px;
-    height: 100vh;
-  }
-
-  nav{
-   width: 40vw;
-   position: absolute;
-   left: 0;
-   top: 0;
-  } */
-
-/* #mobile-menu{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 2px;
-  }
-
-.hamburger {
-  cursor: pointer;
-}
-
-.hamburger input {
-  display: none;
-}
-
-.hamburger svg {
-  height: 3em;
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line {
-  fill: none;
-  stroke: white;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line-top-bottom {
-  stroke-dasharray: 12 63;
-}
-
-.hamburger input:checked + svg {
-  transform: rotate(-45deg);
-}
-
-.hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
-}
- */
 
 @media(width>=767px) and (width<=1023px) {
   .card:hover {

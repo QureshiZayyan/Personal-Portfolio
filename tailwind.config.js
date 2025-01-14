@@ -13,6 +13,12 @@ export default {
 				bcg: "rgb(25, 25, 25)",
 				bcolor: "#8252c6",
 			},
+			borderColor: {
+				bdclr: "#8252c6",
+			},
+			textColor:{
+                txtclr:"#8252c6",
+			},
 			colors: {
 				customGray: "rgb(234, 234, 234)",
 				background: "hsl(var(--background))",
@@ -27,6 +33,7 @@ export default {
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
 			},
+
 		},
 	},
 	plugins: [tailwindcssAnimate],

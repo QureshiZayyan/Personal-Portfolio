@@ -11,7 +11,7 @@ export const Skills = () => {
 
     return (
         <>
-            <section id='about' className="shadow-bs leading-6 text-white flex items-center justify-between xl:px-[170px] lg:justify-between md:justify-center md:flex-col text-base pt-[32px] lg:pr-[150px] lg:pb-[23px] lg:pl-[150px] my-[60px] md:pl-[10px] md:pr-[40px] md:pb-[17px]">
+            <section id='about' className="shadow-bs leading-6 text-white flex items-center xl:px-[170px] lg:justify-between md:justify-center md:flex-col text-base pt-[32px] lg:pr-[150px] lg:pb-[23px] lg:pl-[150px] my-[60px] md:pl-[10px] md:pr-[40px] md:pb-[17px]">
                 <div className="solar-system">
                     <div className="orbit">
                         <FaBootstrap className="icon" color="#7F18F9" />
