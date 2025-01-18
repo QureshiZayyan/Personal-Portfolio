@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -25,9 +26,27 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.bebas-neue {
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+  font-style: normal
+}
+
+.before-after::before {
+  content: '<>';
+  color: #7F18F9;
+  font-size: 30px;
+}
+
+.before-after::after {
+  content: '</>';
+  color: #7F18F9;
+  font-size: 30px;
+}
+
 .solar-system {
   /* position: relative; */
-  width: 250px;
+  width: 240px;
   height: 270px;
   /* border: 2.5px solid white; */
   border-radius: 50%;
@@ -38,14 +57,14 @@ body::-webkit-scrollbar {
   /* position: absolute; */
   width: 100%;
   height: 100%;
-  animation: rotate 30s linear infinite;
+  animation: rotate 45s linear infinite;
 }
 
 .icon {
   position: absolute;
   font-size: 30px;
-  width: 140px;
-  height: 58px;
+  width: 90px;
+  height: 48px;
 }
 
 /* Position the icons on the border */
@@ -115,31 +134,6 @@ body::-webkit-scrollbar {
   100% {
     transform: rotate(360deg);
   }
-}
-
-
-/* From Uiverse.io by AKAspidey01 */
-.button {
-  display: flex;
-  align-items: center;
-  padding: 4px 0;
-  gap: 5px;
-  border-radius: 5px;
-  border: none;
-  overflow: hidden;
-  background: #8252c6;
-  color: #fff;
-}
-
-.button-text {
-  transform: translateX(15px);
-  /* font-size: 1em; */
-  font-weight: 500;
-  transition-duration: 0.3s;
-}
-
-#about .icons {
-  /* width: 800px; */
 }
 
 .iconer {
@@ -214,9 +208,9 @@ footer {
   }
 }
 
-
 .project-heading {
   border-bottom: 1.5px solid var(--textColor);
+  font-family: "Satisfy", serif;
 }
 
 hr {
@@ -285,33 +279,20 @@ nav {
   }
 
   #about {
-    overflow: hidden;
     flex-direction: column;
     margin: 135px 0 105px 0;
-    padding-bottom: 40px;
-  }
-
-  #about hr {
-    width: 100%;
-  }
-
-  .aboutMe {
-    /* width: 90vw; */
-    width: 90vw;
-    overflow: hidden;
-  }
-
-  #query {
-    margin: 0 auto;
-    text-align: center;
     padding: 0;
-    width: 100vw;
   }
 
-  #query span {
-    margin: 0 auto;
-    text-align: center;
+  #about .solar-system {
+    margin: 0;
     padding: 0;
+  }
+
+  #about #expertise {
+    margin: 90px auto 0 auto;
+    width: 90%;
+    padding: 0 10px;
   }
 
   .project-heading {

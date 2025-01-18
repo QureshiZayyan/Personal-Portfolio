@@ -8,6 +8,7 @@ import { ProjectCard } from './components/ProjectCard';
 import { BlogPage } from './components/BlogPage';
 import { AboutPage } from './components/AboutPage';
 import { Footer } from './components/Footer'
+import { Experience } from './components/Experience';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
@@ -19,7 +20,9 @@ const MainContent = () => {
       <Intro />
       <main>
         <Skills />
+        <Experience />
         <section id='project' className="mt-0 mx-[40px] mb-[150px]">
+          {/* <p className='text-center text-white font-semibold flex items-center justify-center flex-col'>worked with <img width={180} height={20} src={tsa} alt="" /></p> */}
           <h2 className="project-heading w-[10%] font-bold xl:text-4xl text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 
         my-[50px] place-items-center md:gap-y-11 md:mx-[16vw] xl:mx-40 lg:mx-[10vw]">
@@ -30,7 +33,7 @@ const MainContent = () => {
             <ProjectCard name="Microsoft UI" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' />
           </div>
         </section>
-      </main >
+      </main>
     </>
   )
 }
