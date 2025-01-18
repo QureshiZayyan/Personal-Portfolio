@@ -82,7 +82,7 @@ export const Intro = () => {
           variants={buttonVariants}
         >
           <a
-            href="src/assets/Zayyan Resume.pdf"
+            href="src/assets/Resume.pdf"
             target="_blank"
             className="text"
             download
