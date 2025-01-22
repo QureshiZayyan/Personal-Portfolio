@@ -43,7 +43,7 @@ export const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/blogs" element={<BlogCard />} />
