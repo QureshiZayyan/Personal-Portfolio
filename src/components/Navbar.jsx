@@ -32,8 +32,8 @@ export const Navbar = () => {
                             <li className='mx-4 font-semibold'><NavLink to="/blogs" className={({ isActive }) =>
                                 isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'
                             }>Blogs</NavLink></li>
-                            <li className='mx-4 font-semibold'><NavLink to="/about" className={({ isActive }) =>
-                                isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'}>About</NavLink></li>
+                            {/* <li className='mx-4 font-semibold'><NavLink to="/about" className={({ isActive }) =>
+                                isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'}>About</NavLink></li> */}
                             {/* <li className='mx-4 font-semibold'><NavLink to="/resume" className={({ isActive }) =>
                                 isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'
                             }>Resume</NavLink></li> */}

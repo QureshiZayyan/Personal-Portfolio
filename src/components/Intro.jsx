@@ -4,21 +4,21 @@ import Typed from "typed.js";
 import { motion } from "framer-motion";
 
 export const Intro = () => {
-  // useEffect(() => {
-  //   const options = {
-  //     strings: ["Technology Enthusiast", "Programmer", "Software Developer"],
-  //     typeSpeed: 30,
-  //     backSpeed: 14,
-  //     backDelay: 2000,
-  //     loop: true,
-  //   };
+  useEffect(() => {
+    const options = {
+      strings: ["Technology Enthusiast", "Programmer", "Software Developer"],
+      typeSpeed: 30,
+      backSpeed: 14,
+      backDelay: 2000,
+      loop: true,
+    };
 
-  //   const typed = new Typed("#profession", options);
+    const typed = new Typed("#profession", options);
 
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   const textVariants = {
     hidden: { opacity: 0, x: -100 },
