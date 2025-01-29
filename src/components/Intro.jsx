@@ -5,12 +5,13 @@ import { motion } from "framer-motion";
 
 export const Intro = () => {
   useEffect(() => {
+
     const options = {
       strings: ["Technology Enthusiast", "Programmer", "Software Developer"],
       typeSpeed: 30,
       backSpeed: 14,
       backDelay: 2000,
-      loop: true,
+      // loop: true,
     };
 
     const typed = new Typed("#profession", options);
