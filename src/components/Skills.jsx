@@ -3,7 +3,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
-import { AiFillHtml5 } from "react-icons/ai";
+import { FaHtml5 } from "react-icons/fa6";
 import { BiLogoCss3 } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
@@ -28,7 +28,7 @@ export const Skills = () => {
                         <RiTailwindCssFill className="icon" color="#3EBFF8" />
                         <FaReact className="icon" color="#00D8FF" />
                         <SiRedux className="icon" color="#553E83" />
-                        <AiFillHtml5 className="icon" color="#E5532D" />
+                        <FaHtml5 className="icon" color="#E5532D" />
                         <BiLogoCss3 className="icon" color="#2D53E7" />
                         <IoLogoJavascript className="icon" color="#F7DF1E" />
                         <FaNodeJs className="icon" color="#307C33" />
@@ -38,9 +38,9 @@ export const Skills = () => {
                 <motion.div id="expertise" className=' w-[50%] mx-12'
                     initial={{ opacity: 0, x: 70 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: true, amount: 0.6, }}
+                    viewport={{ once: true, amount: 0.5, }}
                     transition={{
-                        duration: 0.8,
+                        duration: 0.6,
                         ease: "easeInOut",
                     }}>
                     <h3 className="text-3xl mb-3">Skills & Expertise</h3>
