@@ -11,7 +11,7 @@ export const ProjectCard = ({ name, about, imageurl, link }) => {
       className="card bg-white xl:w-[13.8vw] lg:w-[13.5vw] md:w-[20.5vw]"
       initial={{ opacity: 0, scale: 0.8, y: 50 }}
       animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
-      viewport={{ once: true, amount: 0.8}}
+      viewport={{ once: true, amount: 0.8 }}
       transition={{
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
