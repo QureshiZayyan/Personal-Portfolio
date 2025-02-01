@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
 
 .icon:nth-child(3) {
   top: 129px;
-  left: 268px;
+  left: 260px;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 4px 10px #00D8FF)
 }
@@ -283,6 +283,15 @@ nav {
   #about .solar-system {
     margin: 30px auto 0 auto;
     padding: 0;
+    position: relative;
+  }
+
+  .orbit {
+    margin: 0 auto;
+  }
+
+  .icon {
+    margin: 0 auto;
   }
 
   #about #expertise {
@@ -302,7 +311,7 @@ nav {
   }
 
   .card {
-    width: 53vw;
+    width: 55vw;
     margin-bottom: 25px;
   }
 
@@ -325,8 +334,8 @@ nav {
     opacity: initial;
   }
 
-  .cards-container .project-content {
-    height: 57px;
+  #blogContainer .project-content {
+    height: 280px;
   }
 
   .resume-github {
@@ -347,6 +356,10 @@ nav {
 
   #project {
     margin-bottom: 90px;
+  }
+
+  #project .project-content {
+    padding-bottom: 11px;
   }
 
 }

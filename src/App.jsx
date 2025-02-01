@@ -9,11 +9,11 @@ import { BlogPage } from './components/BlogPage';
 import { AboutPage } from './components/AboutPage';
 import { Footer } from './components/Footer'
 import { Resume } from './components/Resume';
-// import { Experience } from './components/Experience';
 import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
 import recipe from './assets/recipe.png';
+import tsa from './assets/tsa.jpg'
 
 const MainContent = () => {
   return (
@@ -28,12 +28,16 @@ const MainContent = () => {
           <div className="grid lg:grid-cols-4 md:grid-cols-2 
         my-[50px] place-items-center md:gap-y-11 md:mx-[16vw] xl:mx-40 lg:mx-[10vw]">
             <ProjectCard name="News App" imageurl={image2} link='https://searchnewss.vercel.app/' about='React,Tailwind' />
-            <ProjectCard name="Live Weather App" imageurl={image3} link='https://searchweathers.vercel.app/' />
+            <ProjectCard name="Weather App" imageurl={image3} link='https://searchweathers.vercel.app/' about='React,Tailwind' />
             <ProjectCard name="Recipe App" imageurl={recipe} link='https://search-recipess.vercel.app/' about='React' />
             {/* <ProjectCard name="ToDo List App" imageurl={image1} link='https://qureshizayyan.github.io/ToDo-List/' about='HTML,CSS,JS' /> */}
             <ProjectCard name="Microsoft UI" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' />
           </div>
         </section>
+        {/* <section id="experience" className='flex items-center justify-center flex-col'>
+          <h3 className='text-white'>Worked With</h3>
+          <img src={tsa} alt="" width={200} />
+        </section> */}
       </main>
     </>
   )

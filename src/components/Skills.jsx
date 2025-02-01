@@ -14,10 +14,10 @@ export const Skills = () => {
         <section id='about' className="shadow-bs text-white flex items-center justify-center my-[100px]"
 
         >
-            <motion.div className="solar-system ml-20"
+            <motion.div className="solar-system ml-16"
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.4 }}
                 transition={{
                     duration: 0.7,
                     ease: [easeOut],
@@ -37,7 +37,7 @@ export const Skills = () => {
             <motion.div id="expertise" className='w-[50%] ml-32'
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.4 }}
                 transition={{
                     duration: 0.7,
                     ease: [easeOut],
