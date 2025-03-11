@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Intro } from './components/Intro';
-import { Skills } from './components/Skills';
+// import { Skills } from './components/Skills';
 import { BlogCard } from './components/BlogCard';
 import { ProjectCard } from './components/ProjectCard';
 import { BlogPage } from './components/BlogPage';
@@ -13,16 +13,19 @@ import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
 import recipe from './assets/recipe.png';
-import tsa from './assets/tsa.jpg'
+import { lazy, Suspense } from 'react';
 
+const Skills = lazy(() => import('./components/Skills'))
 const MainContent = () => {
+
   return (
     <>
       <Intro />
       <main>
-        <Skills />
-        {/* <Experience /> */}
-        <section id='project' className="mt-0 mb-[150px] mx-[40px]">
+        <Suspense fallback={<p>Loading...</p>}>
+          <Skills /> {/* Loaded only when needed */}
+        </Suspense>
+        <section id='project' className="mb-[150px] mx-[40px]">
           {/* <p className='text-center text-white font-semibold flex items-center justify-center flex-col'>worked with <img width={180} height={20} src={tsa} alt="" /></p> */}
           <h2 className="project-heading w-[10%] font-bold xl:text-4xl text-[2.1rem] text-white border-b-[1.5px] mb-[20px]">Projects</h2>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 
@@ -34,10 +37,6 @@ const MainContent = () => {
             <ProjectCard name="Microsoft UI" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' />
           </div>
         </section>
-        {/* <section id="experience" className='flex items-center justify-center flex-col'>
-          <h3 className='text-white'>Worked With</h3>
-          <img src={tsa} alt="" width={200} />
-        </section> */}
       </main>
     </>
   )
@@ -52,7 +51,7 @@ export const App = () => {
           <Route path="/" element={<MainContent />} />
           <Route path="/blogs" element={<BlogCard />} />
           <Route path="/blogpage/:id" element={<BlogPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/about" element={<AboutPage />} /> */}
           <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />

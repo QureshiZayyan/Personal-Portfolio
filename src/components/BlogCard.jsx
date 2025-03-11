@@ -1,7 +1,29 @@
 import { useEffect, useContext, useState } from 'react'
+import { db } from "../firebase";
+import { collection, getDocs } from 'firebase/firestore';
 import { StateContext } from '../states/StateProvider';
 import { Link } from 'react-router-dom'
 import { SkeletonCard } from './SkeletonCard'
+
+
+// useEffect(() => {
+//     const fetchProducts = async () => {
+//       try {
+//         const querySnapshot = await getDocs(collection(db, "Mobiles")); // Fetch from "products" collection
+//         const productList = querySnapshot.docs.map(doc => ({
+//           id: doc.id,
+//           ...doc.data(),
+//         }));
+//         console.log(productList);
+
+//         setProducts(productList);
+//       } catch (error) {
+//         console.error("Error fetching products:", error);
+//       }
+//     };
+
+//     fetchProducts();
+//   }, []);
 
 export const BlogCard = () => {
 
@@ -11,10 +33,14 @@ export const BlogCard = () => {
     const FetchData = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`https://strapi-portfolio-project.onrender.com/api/blogs?populate=image`);
-            if (!response.ok) throw new Error('Error fetching data');
-            const data = await response.json();
-            setBlog(data.data);
+            const querySnapshot = await getDocs(collection(db, "Blogs"));
+            const response = querySnapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data(),
+            }));
+            setBlog(response)
+            console.log(response);
+
         } catch (error) {
             console.log(error);
             setLoading(false);
@@ -44,7 +70,7 @@ export const BlogCard = () => {
                         </div> */}
                         <div className="project-content h-[265px] pt-3 pb-4 pr-[8.2px] pl-[9px]">
                             <h3 className="h-[63px] font-semibold leading-6 text-lg xl:text-lg" dangerouslySetInnerHTML={{ __html: item.title }} />
-                            <p className="about-project mt-[25px] mb-[7px] xl:text-[16.8px] lg:text-[14px]" dangerouslySetInnerHTML={{ __html: truncateText(item.content, 105) }} />
+                            <p className="about-project mt-[25px] mb-[7px] xl:text-[16.8px] lg:text-[14px]" dangerouslySetInnerHTML={{ __html: truncateText(item[0, 1], 120) }} />
                             <Link to={`/blogpage/${item.id}`}><button className="absolute bottom-3 bg-[#8252c6] text-white p-1 rounded-[5px]">
                                 Read More
                             </button>
@@ -56,6 +82,3 @@ export const BlogCard = () => {
         </section>
     )
 }
-
-
-

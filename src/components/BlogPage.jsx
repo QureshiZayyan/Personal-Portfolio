@@ -9,7 +9,7 @@ export const BlogPage = () => {
 
     useEffect(() => {
         if (blog) {
-            const foundBlog = blog.find((item) => item.id === parseInt(id));
+            const foundBlog = blog.find((item) => item.id === (id));
             setSelectedBlog(foundBlog || null);
         }
     }, [id]);
@@ -23,8 +23,15 @@ export const BlogPage = () => {
             <article>
                 <div className="text-white">
                     <h2 className='text-3xl text-txtclr'>{selectedBlog.title}</h2>
-
-                    <div className='mt-4' dangerouslySetInnerHTML={{ __html: selectedBlog.content }} />
+                    <p className='mt-4'>{selectedBlog[1]}</p>
+                    <p className='mt-4'>{selectedBlog[2]}</p>
+                    <p className='mt-4'>{selectedBlog[3]}</p>
+                    <p className='mt-4'>{selectedBlog[4]}</p>
+                    <p className='mt-4'>{selectedBlog[5]}</p>
+                    <p className='mt-4'>{selectedBlog[6]}</p>
+                    <p className='mt-4'>{selectedBlog[7]}</p>
+                    <p className='mt-4'>{selectedBlog[8]}</p>
+                    <p className='mt-4'>{selectedBlog[9]}</p>
                 </div>
             </article>
         </section>
