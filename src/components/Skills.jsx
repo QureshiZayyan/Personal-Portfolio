@@ -15,16 +15,17 @@ const Skills = () => {
     const isInView = useInView(ref, { once: true });
 
     return (
-        <motion.section id='about' className="shadow-bs text-white flex items-center justify-center my-[110px]"
-            ref={ref}
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
-            animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
-            viewport={{ once: true, amount: 1 }}
-            transition={{
-                duration: 0.8,
-                ease: [0.22, 1, 0.36, 1],
-            }}>
-            <div className="solar-system ml-[30px]">
+        <section id='about' className="shadow-bs text-white flex items-center justify-center my-[110px]"
+        >
+            <motion.div className="solar-system ml-[30px]"
+                ref={ref}
+                initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                    duration: 0.8,
+                    ease: [0.22, 1, 0.36, 1],
+                }}>
                 <div className="orbit">
                     <FaBootstrap className="icon" color="#7F18F9" />
                     <RiTailwindCssFill className="icon" color="#3EBFF8" />
@@ -35,15 +36,23 @@ const Skills = () => {
                     <IoLogoJavascript className="icon" color="#F7DF1E" />
                     <FaNodeJs className="icon" color="#307C33" />
                 </div>
-            </div>
+            </motion.div>
 
-            <div id="expertise" className='w-[50%] ml-[110px]'>
+            <motion.div id="expertise" className='w-[50%] ml-[110px]'
+                ref={ref}
+                initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                    duration: 0.8,
+                    ease: [0.22, 1, 0.36, 1],
+                }}>
                 <h3 className="text-3xl mb-3">Skills & Expertise</h3>
                 <p className="before-after text-[26px] leading-9">
                     With a passion for creating responsive and dynamic web applications, I bring expertise in frontend and backend technologies. Whether it's crafting pixel-perfect designs or architecting seamless state management, I thrive on building solutions that make an impact.
                 </p>
-            </div>
-        </motion.section>
+            </motion.div>
+        </section>
     );
 };
 
