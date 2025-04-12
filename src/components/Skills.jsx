@@ -1,4 +1,4 @@
-import { easeOut, motion } from "framer-motion";
+import { easeOut, motion, useInView } from "framer-motion";
 import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
@@ -7,16 +7,22 @@ import { FaHtml5 } from "react-icons/fa6";
 import { BiLogoCss3 } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
+import { useRef } from "react";
 
 const Skills = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <motion.section id='about' className="shadow-bs text-white flex items-center justify-center my-[110px]"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
+            ref={ref}
+            initial={{ opacity: 0, scale: 0.8, y: 50 }}
+            animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
+            viewport={{ once: true, amount: 1 }}
             transition={{
-                duration: 0.7,
-                ease: [easeOut],
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
             }}>
             <div className="solar-system ml-[30px]">
                 <div className="orbit">

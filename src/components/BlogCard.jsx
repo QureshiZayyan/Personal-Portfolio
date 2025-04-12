@@ -5,26 +5,6 @@ import { StateContext } from '../states/StateProvider';
 import { Link } from 'react-router-dom'
 import { SkeletonCard } from './SkeletonCard'
 
-
-// useEffect(() => {
-//     const fetchProducts = async () => {
-//       try {
-//         const querySnapshot = await getDocs(collection(db, "Mobiles")); // Fetch from "products" collection
-//         const productList = querySnapshot.docs.map(doc => ({
-//           id: doc.id,
-//           ...doc.data(),
-//         }));
-//         console.log(productList);
-
-//         setProducts(productList);
-//       } catch (error) {
-//         console.error("Error fetching products:", error);
-//       }
-//     };
-
-//     fetchProducts();
-//   }, []);
-
 export const BlogCard = () => {
 
     const { blog, setBlog } = useContext(StateContext);
