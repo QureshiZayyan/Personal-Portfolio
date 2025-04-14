@@ -11,19 +11,21 @@ import { useRef } from "react";
 
 const Skills = () => {
 
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const solarRef = useRef(null);
+    const expertiseRef = useRef(null);
+
+    const isSolarInView = useInView(solarRef, { once: true, amount: 0.2 });
+    const isExpertiseInView = useInView(expertiseRef, { once: true, amount: 0.2 });
 
     return (
-        <section id='about' className="shadow-bs text-white flex items-center justify-center my-[110px]"
-        >
+        <section id='about' className="shadow-bs text-white flex items-center justify-center my-[110px]">
             <motion.div className="solar-system ml-[30px]"
-                ref={ref}
-                initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
+                ref={solarRef}
+                initial={{ opacity: 0, scale: 0.5, y: 50 }}
+                animate={isSolarInView ? { opacity: 1, scale: 1, y: 0 } : {}}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{
-                    duration: 0.8,
+                    duration: 1.5,
                     ease: [0.22, 1, 0.36, 1],
                 }}>
                 <div className="orbit">
@@ -39,12 +41,12 @@ const Skills = () => {
             </motion.div>
 
             <motion.div id="expertise" className='w-[50%] ml-[110px]'
-                ref={ref}
-                initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
+                ref={expertiseRef}
+                initial={{ opacity: 0, scale: 0.5, y: 50 }}
+                animate={isExpertiseInView ? { opacity: 1, scale: 1, y: 0 } : {}}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{
-                    duration: 0.8,
+                    duration: 1.5,
                     ease: [0.22, 1, 0.36, 1],
                 }}>
                 <h3 className="text-3xl mb-3">Skills & Expertise</h3>
@@ -52,7 +54,7 @@ const Skills = () => {
                     With a passion for creating responsive and dynamic web applications, I bring expertise in frontend and backend technologies. Whether it's crafting pixel-perfect designs or architecting seamless state management, I thrive on building solutions that make an impact.
                 </p>
             </motion.div>
-        </section>
+        </section >
     );
 };
 
