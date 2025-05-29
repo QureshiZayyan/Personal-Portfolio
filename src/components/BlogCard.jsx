@@ -48,10 +48,10 @@ export const BlogCard = () => {
                         {/* <div className="image p-[8px]">
                             <img className="w-full rounded-[15px] bg-black aspect-video" src={item.image ? item.image.url : null} alt={item.title} />
                         </div> */}
-                        <div className="project-content h-[265px] pt-3 pb-4 pr-[8.2px] pl-[9px]">
+                        <div className="project-content h-[280px] pt-3 pb-4 pr-[8.2px] pl-[9px]">
                             <h3 className="h-[63px] font-semibold leading-6 text-lg xl:text-lg" dangerouslySetInnerHTML={{ __html: item.title }} />
                             <p className="about-project mt-[25px] mb-[7px] xl:text-[16.8px] lg:text-[14px]" dangerouslySetInnerHTML={{ __html: truncateText(item[0, 1], 120) }} />
-                            <Link to={`/blogpage/${item.id}`}><button className="absolute bottom-3 bg-[#8252c6] text-white p-1 rounded-[5px]">
+                            <Link to={`/blogpage/${item.id}`}><button className="absolute bottom-[13px] bg-[#8252c6] px-[4px] text-white rounded-[5px]">
                                 Read More
                             </button>
                             </Link>

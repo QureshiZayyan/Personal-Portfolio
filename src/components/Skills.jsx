@@ -46,7 +46,7 @@ const Skills = () => {
           ease: [0.22, 1, 0.36, 1],
         }}
       >
-        <h3 className="text-3xl mb-3">Skills & Expertise</h3>
+        <h3 className="text-3xl mb-3 border-b-[1.5px] border-bdclr pb-2 w-[250px]">Skills & Expertise</h3>
         <p className="before-after text-[26px] leading-9">
           With a passion for creating responsive and dynamic web applications,
           I bring expertise in frontend and backend technologies. Whether it's

@@ -167,7 +167,7 @@ footer {
 
 .card {
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 .aboutMe {
@@ -311,7 +311,7 @@ nav {
   }
 
   .card {
-    width: 55vw;
+    width: 78vw;
     margin-bottom: 25px;
   }
 
