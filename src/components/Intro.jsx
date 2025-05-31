@@ -101,7 +101,7 @@ export const Intro = () => {
             className="text"
           >
             <motion.button
-              className="btn lg:text-[13.4px] text-[13px] px-[6px] py-[4px] font-[650] cursor-pointer border-2 text-white rounded-[5px] ml-[13px]"
+              className="btn visit lg:text-[13.4px] text-[13px] px-[6px] py-[4px] font-[650] cursor-pointer border-2 text-white rounded-[5px] ml-[13px]"
               variants={buttonVariants}
             >
               Visit Github

@@ -216,15 +216,21 @@ footer {
 }
 
 nav {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
     0 6px 10px rgba(0, 0, 0, 0.2),
-    0 2px 2px rgba(255, 255, 255, 0.1);
+    0 2px 2px rgba(255, 255, 255, 0.1); */
   background: #151515;
 }
 
 /* for mobiles */
 
 @media (max-width:768px) {
+
+  #links {
+    margin: 23px 0 10px 0;
+    /* background-color: red; */
+    display: block;
+  }
 
   .orbit {
     max-width: 100%;
@@ -238,6 +244,7 @@ nav {
 
   nav {
     justify-content: center;
+    font-size: 16px !important;
   }
 
   .profile-links .img {
@@ -276,8 +283,7 @@ nav {
 
   #about {
     flex-direction: column;
-    margin: 80px 0 105px 0;
-    /* background-color: red; */
+    margin: 115px 0 105px 0;
   }
 
   #about .solar-system {
@@ -312,7 +318,7 @@ nav {
 
   .card {
     width: 78vw;
-    margin-bottom: 25px;
+    margin-bottom: 38px;
   }
 
   .blog-card {
@@ -362,9 +368,22 @@ nav {
     padding-bottom: 11px;
   }
 
+  .live {
+    padding: 5px 6px;
+  }
+
+  .github {
+    padding: 5px 12px;
+  }
+
+  .visit {
+    position: relative;
+    top: 52px;
+    left: -5px;
+  }
 }
 
-@media(width>=767px) and (width<=1023px) {
+/* @media(width>=767px) and (width<=1023px) {
   .card:hover {
     transform: initial;
     opacity: initial;
@@ -373,5 +392,21 @@ nav {
   .btn:hover {
     transform: none;
     opacity: initial;
+  }
+} */
+
+@media(width>=767px) and (width<=877px) {
+  .solar-system {
+    margin-left: 50px;
+  }
+}
+
+@media(width>=767px) and (width<=1023px) {
+  #about {
+    margin: 180px 0 120px 0;
+  }
+
+  .blog-card {
+    width: 35vw;
   }
 }

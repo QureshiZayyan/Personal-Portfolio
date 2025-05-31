@@ -11,13 +11,13 @@ const Skills = () => {
   return (
     <section
       id="about"
-      className="shadow-bs text-white flex items-center justify-center my-[110px]"
+      className="shadow-bs text-white flex items-center justify-center md:items-start mt-[110px] mb-[130px]"
     >
       <motion.div
         className="solar-system ml-[30px]"
-        initial={{ opacity: 0, scale: 0.5, y: 50 }}
+        initial={{ opacity: 0, scale: 0.8, y: 8 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.4 }}
         transition={{
           duration: 1.5,
           ease: [0.22, 1, 0.36, 1],
@@ -38,9 +38,9 @@ const Skills = () => {
       <motion.div
         id="expertise"
         className="w-[50%] ml-[110px]"
-        initial={{ opacity: 0, scale: 0.5, y: 50 }}
+        initial={{ opacity: 0, scale: 0.8, y: 8 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.4 }}
         transition={{
           duration: 1.5,
           ease: [0.22, 1, 0.36, 1],

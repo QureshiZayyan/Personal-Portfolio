@@ -18,7 +18,7 @@ export const Navbar = () => {
     return (
         <>
             <header className='sticky top-0 z-[1]'>
-                <nav className="px-3 flex items-center py-4">
+                <nav className="px-3 flex items-center py-4 text-[15px] shadow-lg">
                     {/* <div className="logo">
                         <a href="#" onClick={handleLogoClick}>
                             <img src={logo} alt="logo" className="w-[80px] h-[60px] object-cover" />
@@ -28,9 +28,9 @@ export const Navbar = () => {
                     <div className="links text-white">
                         <ul className='flex'>
                             <li className='mx-4 font-semibold'><NavLink to='/' className={({ isActive }) =>
-                                isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'}>Home</NavLink></li>
+                                isActive ? 'bg-bcolor py-[2.5px] px-[6.5px] rounded-[5px]' : 'hover:text-gray-300'}>Home</NavLink></li>
                             <li className='mx-4 font-semibold'><NavLink to="/blogs" className={({ isActive }) =>
-                                isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'
+                                isActive ? 'bg-bcolor py-[2.5px] px-[6.5px] rounded-[5px]' : 'hover:text-gray-300'
                             }>Blogs</NavLink></li>
                             {/* <li className='mx-4 font-semibold'><NavLink to="/about" className={({ isActive }) =>
                                 isActive ? 'bg-bcolor py-[2.5px] px-[9px] rounded-[5px]' : 'hover:text-gray-300'}>About</NavLink></li> */}
