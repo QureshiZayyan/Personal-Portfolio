@@ -31,7 +31,7 @@ export const ProjectCard = ({ name, about, imageurl, GithubLink, liveLink, TechS
           {name}
         </h3>
         <p className="mb-[6.5px] text-[15px] font-medium">{TechStack}</p>
-        <p className="about-project mt-[1px] mb-[15px] xl:text-[16.8px] lg:text-[14px]">
+        <p className="about-project mt-[1px] mb-[18px] xl:text-[16.8px] lg:text-[14px]">
           {about}
         </p>
         <span className="text-[13.5px]" id="links">

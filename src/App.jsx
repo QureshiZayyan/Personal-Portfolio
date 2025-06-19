@@ -13,15 +13,18 @@ import image2 from './assets/news.jpg';
 import image3 from './assets/weather.png'
 import mslogo from './assets/mslogo.jpeg';
 import recipe from './assets/recipe.png';
+import ecom  from './assets/e-commerce.jpg'
 import { lazy, Suspense } from 'react';
 import { DiReact } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiFirebase } from "react-icons/si";
 
 const Skills = lazy(() => import('./components/Skills'))
 const MainContent = () => {
 
   let react = <DiReact color='#58C4DC' className='inline' size={32} />
   let tailwind = <RiTailwindCssFill color='#00BCFF' className='inline' size={32} />
+  let firebase = <SiFirebase color='#FFC400' className='inline' size={25} />
 
   return (
     <>
@@ -38,7 +41,7 @@ const MainContent = () => {
             <ProjectCard name="News App" imageurl={image2}
               TechStack={<>{react}{tailwind}</>} liveLink={'http://searchnewss.vercel.app/'} GithubLink={'https://github.com/QureshiZayyan/News-App'} />
             <ProjectCard name="Weather App" imageurl={image3} liveLink='https://searchweathers.vercel.app/' GithubLink={'https://github.com/QureshiZayyan/Weather-App'} TechStack={<>{react}{tailwind}</>} />
-            <ProjectCard name="Recipe App" imageurl={recipe} liveLink='https://search-recipess.vercel.app/' GithubLink={'https://github.com/QureshiZayyan/Recipe-Search-App'} TechStack={<>{react}</>} />
+            <ProjectCard name="E-Commerce" imageurl={ecom} liveLink='https://e-commerceee.vercel.app/' GithubLink={'https://github.com/QureshiZayyan/E-Commerce'} TechStack={<>{react}{firebase}{tailwind}</>} />
             {/* <ProjectCard name="ToDo List App" imageurl={image1} link='https://qureshizayyan.github.io/ToDo-List/' about='HTML,CSS,JS' /> */}
             {/* <ProjectCard name="Microsoft UI" imageurl={mslogo} link='https://microsoftuiclone.vercel.app/' about='React,Tailwind' /> */}
           </div>
