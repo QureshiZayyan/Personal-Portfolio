@@ -1,7 +1,7 @@
 import { SiInstagram } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import { BsGithub } from "react-icons/bs";
+import { RxGithubLogo } from "react-icons/rx";
 
 export const Footer = () => {
     return (
@@ -14,11 +14,10 @@ export const Footer = () => {
                 </div>
 
                 <div className="profile-links mt-[20px] mb-[12px] flex items-center justify-center w-full">
-                    <div><a href="https://github.com/QureshiZayyan" target="_blank"><BsGithub className="img github lg:w-[24.5px] xl:w-[30.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
-                    <div><a href="https://www.linkedin.com/in/zayyanqureshi/" target="_blank"><FaLinkedinIn className="img linkedin lg:w-[24.5px] xl:w-[30.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
-                    <div><a href="https://twitter.com/qureshizayyan1" target="_blank"><FaXTwitter className="img twitter lg:w-[24.5px] xl:w-[30.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
-                    <div><a href="https://instagram.com/qureshi_zayyan" target="_blank"><SiInstagram className="img twitter lg:w-[24.5px] xl:w-[30.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
-                    {/* <div><a href="https://wa.me/+918793733783" target="_blank"><FaWhatsapp size={50} className="fixed bottom-8 right-5 h-10 cursor-pointer active:outline-none active:bg-none" /></a></div> */}
+                    <div><a href="https://github.com/QureshiZayyan" target="_blank"><RxGithubLogo className="img github w-[27px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-7" /></a></div>
+                    <div><a href="https://www.linkedin.com/in/zayyanqureshi/" target="_blank"><FaLinkedinIn className="img linkedin w-[24.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
+                    <div><a href="https://twitter.com/qureshizayyan1" target="_blank"><FaXTwitter className="img twitter w-[24.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
+                    <div><a href="https://instagram.com/qureshi_zayyan" target="_blank"><SiInstagram className="img twitter w-[24.5px] mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
                 </div>
             </footer>
         </>

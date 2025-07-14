@@ -251,6 +251,13 @@ nav {
     width: 25.8px;
   }
 
+  .profile-links .github {
+    width: 70px !important;
+    height: 39px !important;
+    position: relative;
+    left: 20px;
+  }
+
   .Connected {
     font-size: 22px;
   }
@@ -322,7 +329,7 @@ nav {
   }
 
   .blog-card {
-    width: 73vw;
+    width: 80vw;
   }
 
   .btn:hover {
@@ -409,4 +416,17 @@ nav {
   .blog-card {
     width: 35vw;
   }
+}
+
+@media(width>=500px) and (width<=800px) {
+
+  #project-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px -4vw !important;
+  }
+
+  .card {
+    width: 42vw;
+  }
+
 }

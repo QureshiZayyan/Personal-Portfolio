@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 import { VscGithub } from "react-icons/vsc";
-import { DiReact } from "react-icons/di";
 
 export const ProjectCard = ({ name, about, imageurl, GithubLink, liveLink, TechStack }) => {
   const ref = useRef(null);
@@ -30,7 +29,9 @@ export const ProjectCard = ({ name, about, imageurl, GithubLink, liveLink, TechS
         <h3 className="font-semibold leading-6 mb-[6.5px] text-base xl:text-lg">
           {name}
         </h3>
-        <p className="mb-[6.5px] text-[15px] font-medium">{TechStack}</p>
+        <div className="mb-[6.5px] text-[15px] font-medium flex gap-2 items-center">
+          {TechStack}
+        </div>
         <p className="about-project mt-[1px] mb-[18px] xl:text-[16.8px] lg:text-[14px]">
           {about}
         </p>

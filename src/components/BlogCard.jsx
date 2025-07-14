@@ -19,10 +19,7 @@ export const BlogCard = () => {
                 ...doc.data(),
             }));
             setBlog(response)
-            console.log(response);
-
         } catch (error) {
-            console.log(error);
             setLoading(false);
         }
         finally {
@@ -51,7 +48,7 @@ export const BlogCard = () => {
                         <div className="project-content h-[280px] pt-3 pb-4 pr-[8.2px] pl-[9px]">
                             <h3 className="h-[63px] font-semibold leading-6 text-lg xl:text-lg" dangerouslySetInnerHTML={{ __html: item.title }} />
                             <p className="about-project mt-[25px] mb-[7px] xl:text-[16.8px] lg:text-[14px]" dangerouslySetInnerHTML={{ __html: truncateText(item[0, 1], 120) }} />
-                            <Link to={`/blogpage/${item.id}`}><button className="text-[15px] absolute py-[1.5px] bottom-[13px] bg-[#8252c6] px-[4px] text-white rounded-[5px]">
+                            <Link to={`/blogpage/${item.id}`}><button className="text-[15px] font-semibold absolute py-[2px] bottom-[13px] bg-[#8252c6] px-[4px] text-white rounded-[5px]">
                                 Read More
                             </button>
                             </Link>
