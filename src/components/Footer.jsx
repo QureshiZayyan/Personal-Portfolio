@@ -14,7 +14,7 @@ export const Footer = () => {
                 </div>
 
                 <div className="profile-links mt-[20px] mb-[12px] flex items-center justify-center w-full">
-                    <div><a href="https://github.com/QureshiZayyan" target="_blank"><RxGithubLogo size={28} className="img github mx-[7.5px] cursor-pointer active:outline-none active:bg-none" /></a></div>
+                    <div><a href="https://github.com/QureshiZayyan" target="_blank"><RxGithubLogo size={28} className="img mx-[7.5px] cursor-pointer active:outline-none active:bg-none" /></a></div>
                     <div><a href="https://www.linkedin.com/in/zayyanqureshi/" target="_blank"><FaLinkedinIn size={26} className="img linkedin mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
                     <div><a href="https://twitter.com/qureshizayyan1" target="_blank"><FaXTwitter size={26} className="img twitter mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>
                     <div><a href="https://instagram.com/qureshi_zayyan" target="_blank"><SiInstagram size={26} className="img twitter mx-[7.5px] cursor-pointer active:outline-none active:bg-none h-9" /></a></div>

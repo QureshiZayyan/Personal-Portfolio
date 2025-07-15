@@ -19,7 +19,7 @@ export const BlogPage = () => {
     }
 
     return (
-        <section id='BlogPage' className='px-7 my-[50px]'>
+        <section id='BlogPage' className='px-6 my-[50px]'>
             <article>
                 <div className="text-white">
                     <h2 className='text-3xl text-txtclr font-medium'>{selectedBlog.title}</h2>

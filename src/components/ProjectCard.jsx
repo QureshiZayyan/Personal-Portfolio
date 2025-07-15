@@ -36,8 +36,8 @@ export const ProjectCard = ({ name, about, imageurl, GithubLink, liveLink, TechS
           {about}
         </p>
         <span className="text-[13.5px] font-semibold" id="links">
-          <a target="_blank" rel="noopener noreferrer" href={liveLink} className="bg-black live text-white py-[2.5px] pl-[4px] pr-[8px] rounded-[10px]">🔗View live</a>
-          <a target="_blank" rel="noopener noreferrer" href={GithubLink} className="bg-[#8252c6] github ml-3 text-white rounded-[10px] py-[3px] px-[14px]"><VscGithub size={16} className='inline relative left-[-6px]' />Code</a>
+          <a target="_blank" rel="noopener noreferrer" href={liveLink} className="bg-black live text-white py-[5px] pl-[4px] pr-[8px] rounded-[10px]">🔗View live</a>
+          <a target="_blank" rel="noopener noreferrer" href={GithubLink} className="bg-[#8252c6] github ml-3 text-white rounded-[10px] py-[5px] px-[14px]"><VscGithub size={16} className='inline relative left-[-6px]' />Code</a>
         </span>
       </div>
     </motion.div>

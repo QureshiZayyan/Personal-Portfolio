@@ -228,7 +228,6 @@ nav {
 
   #links {
     margin: 23px 0 10px 0;
-    /* background-color: red; */
     display: block;
   }
 
@@ -369,6 +368,10 @@ nav {
     top: 52px;
     left: -5px;
   }
+
+  .github {
+    padding: 6px 14px !important;
+  }
 }
 
 @media (width <=530px) {
@@ -397,7 +400,7 @@ nav {
 
 @media(width>=761px) and (width<=1279px) {
   #about {
-    margin: 180px 0 120px 0;
+    margin: 120px 0 120px 0;
   }
 
   #project-card-container {
@@ -415,7 +418,6 @@ nav {
   #project-card-container {
     grid-template-columns: repeat(3, 1fr) !important;
     margin: 50px -3vw !important;
-    background-color: red !important;
   }
 
 }

@@ -47,8 +47,8 @@ export const BlogCard = () => {
                         </div> */}
                         <div className="project-content h-[300px] lg:h-[270px] pt-3 pb-4 pr-[8.2px] pl-[9px]">
                             <h3 className="h-[63px] font-semibold leading-6 text-[#8252C6] text-lg xl:text-lg" dangerouslySetInnerHTML={{ __html: item.title }} />
-                            <p className="about-project font-semibold mt-[25px] mb-[7px] xl:text-[16.8px] lg:text-[14px]" dangerouslySetInnerHTML={{ __html: truncateText(item[0, 1], 120) }} />
-                            <Link to={`/blogpage/${item.id}`}><button className="text-[15px] font-semibold absolute py-[2px] bottom-[14px] bg-[#8252c6] px-[4px] text-white rounded-[5px]">
+                            <p className="about-project font-semibold mt-[25px] mb-[7px] xl:text-[16.8px] lg:text-[15px]" dangerouslySetInnerHTML={{ __html: truncateText(item[0, 1], 118) }} />
+                            <Link to={`/blogpage/${item.id}`}><button className="text-[15px] font-semibold absolute py-[3px] bottom-[14px] bg-[#8252c6] px-[4px] text-white rounded-[5px]">
                                 Read More
                             </button>
                             </Link>
