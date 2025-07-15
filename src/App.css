@@ -247,17 +247,6 @@ nav {
     font-size: 16px !important;
   }
 
-  .profile-links .img {
-    width: 25.8px;
-  }
-
-  .profile-links .github {
-    width: 70px !important;
-    height: 39px !important;
-    position: relative;
-    left: 20px;
-  }
-
   .Connected {
     font-size: 22px;
   }
@@ -328,10 +317,6 @@ nav {
     margin-bottom: 38px;
   }
 
-  .blog-card {
-    width: 80vw;
-  }
-
   .btn:hover {
     transform: initial;
     opacity: initial;
@@ -379,10 +364,6 @@ nav {
     padding: 5px 6px;
   }
 
-  .github {
-    padding: 5px 12px;
-  }
-
   .visit {
     position: relative;
     top: 52px;
@@ -390,17 +371,23 @@ nav {
   }
 }
 
-/* @media(width>=767px) and (width<=1023px) {
-  .card:hover {
-    transform: initial;
-    opacity: initial;
+@media (width <=530px) {
+  .blog-card {
+    width: 78vw;
+  }
+}
+
+@media (width>=531px) and (width<=767px) {
+
+  #blogContainer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px 2vw !important;
   }
 
-  .btn:hover {
-    transform: none;
-    opacity: initial;
+  .blog-card {
+    width: 45vw;
   }
-} */
+}
 
 @media(width>=767px) and (width<=877px) {
   .solar-system {
@@ -408,25 +395,41 @@ nav {
   }
 }
 
-@media(width>=767px) and (width<=1023px) {
+@media(width>=761px) and (width<=1279px) {
   #about {
     margin: 180px 0 120px 0;
   }
 
-  .blog-card {
-    width: 35vw;
+  #project-card-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin: 50px 5vw !important;
   }
+
 }
 
-@media(width>=500px) and (width<=800px) {
+@media(width>=761px) and (width<=1023px) {
+  .card {
+    width: 28.5vw;
+  }
 
   #project-card-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin: 50px -3vw !important;
+    background-color: red !important;
+  }
+
+}
+
+
+@media(width>=501px) and (width<=760px) {
+
+  #project-card-container {
+    grid-template-columns: repeat(2, 1fr) !important;
     margin: 50px -4vw !important;
   }
 
   .card {
-    width: 42vw;
+    width: 43vw;
   }
 
 }
